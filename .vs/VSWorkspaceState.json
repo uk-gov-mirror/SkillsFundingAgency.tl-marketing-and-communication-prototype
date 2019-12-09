@@ -2,16 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\assets",
-    "\\app\\assets\\javascripts",
-    "\\app\\assets\\json",
-    "\\app\\assets\\sass",
-    "\\app\\assets\\sass\\pages",
     "\\app\\views",
-    "\\app\\views\\includes",
-    "\\node_modules\\expect",
-    "\\node_modules\\expect\\build-es5"
+    "\\app\\views\\includes"
   ],
-  "SelectedNode": "\\app\\assets\\sass\\helpers",
+  "SelectedNode": "\\app",
   "PreviewInSolutionExplorer": false
 }
