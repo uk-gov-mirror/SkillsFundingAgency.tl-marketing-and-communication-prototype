@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\assets",
+    "\\app\\assets\\sass",
+    "\\app\\assets\\sass\\components",
+    "\\app\\assets\\sass\\helpers",
+    "\\app\\assets\\sass\\pages",
     "\\app\\views",
     "\\app\\views\\includes"
   ],
-  "SelectedNode": "\\app",
+  "SelectedNode": "\\app\\views",
   "PreviewInSolutionExplorer": false
 }
