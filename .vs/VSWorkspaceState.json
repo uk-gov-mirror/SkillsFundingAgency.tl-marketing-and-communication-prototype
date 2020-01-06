@@ -3,14 +3,14 @@
     "",
     "\\app",
     "\\app\\assets",
+    "\\app\\assets\\images",
     "\\app\\assets\\sass",
-    "\\app\\assets\\sass\\components",
-    "\\app\\assets\\sass\\helpers",
-    "\\app\\assets\\sass\\pages",
+    "\\app\\assets\\sass\\new",
     "\\app\\views",
+    "\\app\\views\\employer",
     "\\app\\views\\includes",
     "\\app\\views\\ur"
   ],
-  "SelectedNode": "\\app\\views\\ur\\content.html",
+  "SelectedNode": "\\app\\assets\\sass\\ur.scss",
   "PreviewInSolutionExplorer": false
 }
