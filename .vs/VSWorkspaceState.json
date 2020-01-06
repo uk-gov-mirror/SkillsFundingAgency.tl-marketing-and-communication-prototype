@@ -8,8 +8,9 @@
     "\\app\\assets\\sass\\helpers",
     "\\app\\assets\\sass\\pages",
     "\\app\\views",
-    "\\app\\views\\includes"
+    "\\app\\views\\includes",
+    "\\app\\views\\ur"
   ],
-  "SelectedNode": "\\app\\views",
+  "SelectedNode": "\\app\\views\\ur\\content.html",
   "PreviewInSolutionExplorer": false
 }

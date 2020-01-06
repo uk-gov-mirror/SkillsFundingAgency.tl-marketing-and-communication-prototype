@@ -1,0 +1,48 @@
+.tl-nav--logo--landing a {
+    padding: 10px 0;
+    float: left;
+    background: url("../images/logomedium.svg") no-repeat left center;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.tl-nav--logo--employer a {
+    margin-top: 15px;
+    float: left;
+    background: url("../images/logomedium.svg") no-repeat left center;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.tl-nav--employer-switch {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 25px;
+    text-align: right;
+    font-family: 'LL Circular Black Italic Web', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.tl-nav--bar-employer {
+}
+
+.tl-nav--employer {
+    position: relative;
+    display: block !important;
+    overflow: visible !important;
+
+    .tl-nav--hamburger {
+        float: right;
+    }
+}
