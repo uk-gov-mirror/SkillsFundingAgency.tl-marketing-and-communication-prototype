@@ -1,0 +1,253 @@
+{% extends "../layoutemployer.html" %}
+{% block pageTitle %}
+  Find a T Level
+{% endblock %}
+
+{% block body_id %}tl-find{% endblock %}
+
+
+{% block content %}
+
+<section id="tl-employer-find">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Search for a T Level near you</h1>
+                <form class="tl-search--form tl-employer-search--form">
+                    <label for="Postcode" class="hidden">Postcode</label>
+                    <input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
+                    <input type="hidden" asp-for="Qualification" />
+                    <input type="hidden" asp-for="ShouldSearch" />
+                    <input id="MaxResultCount" value="5" type="hidden" />
+                    <input id="tl-find-button" type="submit" class="tl-button tl-button" value="Search" />
+
+                    <br />
+                    <span class="tl-validation--message field-validation-error">You must enter a real postcode</span>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tl-employer-results">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="tl-margin-top-10">Results</h2>
+                <p class="tl-employer-results--summary">Showing <span>all courses</span> near <span>B90 2BB</span></p>
+                <hr class="tl-employer-line tl-margin-top-60">
+
+                <div class="tl-employer-result--item">
+                    <h3>UNIVERSITY COLLEGE BIRMINGHAM</h3>
+                    <span class="tl-employer-result--distance">6 miles away</span>
+                    <p class="tl-employer-results--address">Summer Row, Birmingham, B1 2BY</p>
+                    <span class="tl-employer-results--travel">(24 mins by car / 34 mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Design, surveying and planning (construction) <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital production, design and development <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Education <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital support and services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Healthcare science <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to University College Birmingham's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+
+                <div class="tl-employer-result--item">
+                    <h3>SANDWELL ACADEMY</h3>
+                    <span class="tl-employer-result--distance">8 miles away</span>
+                    <p class="tl-employer-results--address">Halfords Lane, West Bromwich, B21 4JJ</p>
+                    <span class="tl-employer-results--travel">(28 mins by car / 36 mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Design, surveying and planning (construction) <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital production, design and development <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to Sandwell Academy's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+
+                <div class="tl-employer-result--item">
+                    <h3>DUDLEY COLLEGE OF TECHNOLOGY</h3>
+                    <span class="tl-employer-result--distance">12 miles away</span>
+                    <p class="tl-employer-results--address">The Art and Design Centre, Venture Way, Brierley Hill, Dudley</p>
+                    <span class="tl-employer-results--travel">(42 mins by car / 64 mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital support and services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Healthcare science <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to Dudley College of Technology's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+
+                <div class="tl-employer-result--item">
+                    <h3>UNIVERSITY COLLEGE BIRMINGHAM</h3>
+                    <span class="tl-employer-result--distance">13 miles away</span>
+                    <p class="tl-employer-results--address">Summer Row, Birmingham, B1 2BY</p>
+                    <span class="tl-employer-results--travel">(53 mins by car / 70mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Design, surveying and planning (construction) <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital production, design and development <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Education <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital support and services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Healthcare science <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to University College Birmingham's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+
+                <div class="tl-employer-result--item">
+                    <h3>SANDWELL ACADEMY</h3>
+                    <span class="tl-employer-result--distance">15 miles away</span>
+                    <p class="tl-employer-results--address">Halfords Lane, West Bromwich, B21 4JJ</p>
+                    <span class="tl-employer-results--travel">(41 mins by car / 65 mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Design, surveying and planning (construction) <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital production, design and development <span>2020/2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to Sandwell Academy's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+
+                <div class="tl-employer-result--item">
+                    <h3>DUDLEY COLLEGE OF TECHNOLOGY</h3>
+                    <span class="tl-employer-result--distance">16 miles away</span>
+                    <p class="tl-employer-results--address">The Art and Design Centre, Venture Way, Brierley Hill, Dudley</p>
+                    <span class="tl-employer-results--travel">(42 mins by car / 64 mins by public transport)</span>
+                    <ul class="tl-employer-result--routes">
+                        <li><i class="fas fa-check"></i><p>Digital business services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Digital support and services <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Healthcare science <span>2021</span></p></li>
+                        <li><i class="fas fa-check"></i><p>Onsite construction <span>2021</span></p></li>
+                    </ul>
+                    <a href="#" class="tl-employer-result--button">Go to Dudley College of Technology's website <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <a href="#" class="tl-employer-result--showmore">Show more results<i class="fas fa-chevron-down"></i></a>
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="tl-margin-top-10">Filter</h2>
+                <div class="tl-employer-filter--box">
+                    <p>Show me colleges offering T Levels starting in:</p>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="2020" name="2020" value="2020"> <label for="2020" class="tl-employer-filter--checkbox--label">2020<span>(122 available)</span></label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper">
+                        <input class="tl-employer-filter--checkbox" checked type="checkbox" id="2021" name="2021" value="2021"> <label for="2021" class="tl-employer-filter--checkbox--label">2021<span>(742 available)</span></label>
+                    </div>
+                </div>
+
+
+                <div class="tl-employer-filter--box">
+                    <p>Show me colleges offering T Levels courses in:</p>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="1" name="1" value="1"> <label for="1" class="tl-employer-filter--checkbox--label">Design, surveying and planning (construction)</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="2" name="2" value="2"> <label for="2" class="tl-employer-filter--checkbox--label">Digital production, design and development</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="3" name="3" value="3"> <label for="3" class="tl-employer-filter--checkbox--label">Education</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="4" name="4" value="4"> <label for="4" class="tl-employer-filter--checkbox--label">Building services engineering</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="5" name="5" value="5"> <label for="5" class="tl-employer-filter--checkbox--label">Digital business services</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="6" name="6" value="6"> <label for="6" class="tl-employer-filter--checkbox--label">Digital support and services</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="7" name="7" value="7"> <label for="7" class="tl-employer-filter--checkbox--label">Health</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="8" name="8" value="8"> <label for="8" class="tl-employer-filter--checkbox--label">Healthcare science</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="9" name="9" value="9"> <label for="9" class="tl-employer-filter--checkbox--label">Onsite construction</label></div>
+                    <div class="tl-employer-filter--checkbox--wrapper"><input class="tl-employer-filter--checkbox" checked type="checkbox" id="10" name="10" value="10"> <label for="10" class="tl-employer-filter--checkbox--label">Science</label></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--<section id="tl-results" class="tl-container">
+    <div class="row no-gutters justify-content-md-center">
+        <div id="tl-search-results" class="col-md-8">
+            <div class="tl-results-box">
+                <h3>
+                    <span class="tl-results-box--distance">6 miles </span>University College Birmingham
+                </h3>
+                <p>Summer Row, Birmingham</p>
+                <p>
+                    <strong>Courses starting September 2020</strong>
+                </p>
+                <ul class="tl-list tl-list-small">
+                    <li>Education</li>
+                </ul>
+                <a href="https://www.ucb.ac.uk/home.aspx" class="tl-link tl-link--external" id="tl-find--providersite">Go to provider website</a>
+            </div>
+            <br>
+            <div class="tl-results-box">
+                <h3>
+                    <span class="tl-results-box--distance">7 miles </span>Lordswood Girls' School &amp; Sixth Form Centre
+                </h3>
+                <p>Knightlow Rd, Birmingham</p>
+                <p>
+                    <strong>Courses starting September 2020</strong>
+                </p>
+                <ul class="tl-list tl-list-small">
+                    <li>Education</li>
+                </ul>
+                <a href="http://www.lordswoodgirls.co.uk/" class="tl-link tl-link--external" id="tl-find--providersite">Go to provider website</a>
+            </div>
+            <br>
+            <div class="tl-results-box">
+                <h3>
+                    <span class="tl-results-box--distance">9 miles </span>Sandwell Academy
+                </h3>
+                <p>Halfords Lane, West Bromwich</p>
+                <p>
+                    <strong>Courses starting September 2020</strong>
+                </p>
+                <ul class="tl-list tl-list-small">
+                    <li>Digital production, design and development</li>
+                </ul>
+                <a href="https://www.sandwellacademy.com/page/home.aspx" class="tl-link tl-link--external" id="tl-find--providersite">Go to provider website</a>
+            </div>
+            <br>
+            <div class="tl-results-box">
+                <h3>
+                    <span class="tl-results-box--distance">13 miles </span>Dudley College of Technology
+                </h3>
+                <p>The Art and Design Centre, Venture Way, Brierley Hill, Dudley</p>
+                <p>
+                    <strong>Courses starting September 2020</strong>
+                </p>
+                <ul class="tl-list tl-list-small">
+                    <li>Digital production, design and development</li>
+                </ul>
+                <a href="https://www.dudleycol.ac.uk" class="tl-link tl-link--external" id="tl-find--providersite">Go to provider website</a>
+            </div>
+            <br>
+            <div class="tl-results-box">
+                <h3>
+                    <span class="tl-results-box--distance">13 miles </span>Dudley College of Technology
+                </h3>
+                <p>The Broadway, Dudley</p>
+                <p>
+                    <strong>Courses starting September 2020</strong>
+                </p>
+                <ul class="tl-list tl-list-small">
+                    <li>Design, surveying and planning</li>
+                    <li>Education</li>
+                </ul>
+                <a href="https://www.dudleycol.ac.uk" class="tl-link tl-link--external" id="tl-find--providersite">Go to provider website</a>
+            </div>
+            <br>
+        </div>
+    </div>
+    <p class="text-center">
+        <button id="tl-next" class="tl-button tl-button--white text-center tl-margin-bottom-50">Load next 5 providers</button>
+    </p>
+</section>-->
+
+{% endblock %}
