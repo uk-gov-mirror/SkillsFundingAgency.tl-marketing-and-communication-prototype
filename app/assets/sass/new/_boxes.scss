@@ -1,5 +1,5 @@
 .tl-box--employer {
-    padding: 10px 40px;
+    padding: 10px 0;
 
     &-right {
         padding-left: 40px;
@@ -56,7 +56,7 @@
     background-color: black;
     color: white;
     font-size: 14px;
-    padding: 4vw 20px;
+    padding: 6vw 20px;
 
     .tl-employer-box {
         padding: 2vw 0;
@@ -72,14 +72,14 @@
     background-color: white;
     color: black;
     font-size: 14px;
-    padding: 4vw 20px;
+    padding: 6vw 20px;
 }
 
 .tl-employer--boxes-purple {
     background-color: $purple;
     color: white;
     font-size: 14px;
-    padding: 4vw 20px;
+    padding: 6vw 20px;
 }
 
 
@@ -143,5 +143,44 @@
 .tl-employer--involved {
     h2 {
         margin-bottom: 30px;
+    }
+}
+
+.tl-addarrow--white {
+    position: relative;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px -100px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -100px 0px 0px rgba(0,0,0,1);
+    box-shadow: 0px -100px 0px 0px rgba(0,0,0,1);
+
+    &:after {
+        content: "";
+        background-image: url(../images/arrowwhite.svg);
+        background-size: 200px;
+        position: absolute;
+        top: -160px;
+        left: 50%;
+        margin-left: -100px;
+        display: block;
+        height: 180px;
+        width: 200px;
+    }
+}
+
+.tl-addarrow--black {
+    position: relative;
+    margin-top: 180px;
+
+    &:after {
+        content: "";
+        background-image: url(../images/arrow1.svg);
+        background-size: 200px;
+        position: absolute;
+        top: -160px;
+        left: 50%;
+        margin-left: -100px;
+        display: block;
+        height: 180px;
+        width: 200px;
     }
 }

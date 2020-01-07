@@ -7,16 +7,12 @@
 
 
 .tl-banner--nextlevel-employer {
-    background-image: url("../images/nextlevel21200.svg");
+    background-image: url("../images/employer/thenextlevel.jpg");
     max-height: 30vw;
 
-    @media (max-width: 600px) {
-        background-image: url("../images/nextlevel600.svg");
-        max-height: 92vw;
-    }
 
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-color: black;
     background-repeat: no-repeat;
     width: 100%;
@@ -99,6 +95,10 @@
     h1 {
         font-size: 4vw;
         line-height: 3.8vw;
+    }
+
+    .tl-employer--big-image {
+        max-height: 650px;
     }
 
 
