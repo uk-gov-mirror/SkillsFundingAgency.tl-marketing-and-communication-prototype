@@ -51,6 +51,12 @@
             font-weight: bold;
             display: inline-block;
             float: right;
+
+            @media (max-width: 700px) {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+            }
         }
 
         .tl-employer-results--address {
@@ -77,6 +83,12 @@
             -webkit-column-gap: 10px;
             column-count: 2;
             column-gap: 10px;
+
+            @media (max-width: 600px) {
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
 
 
             li {
@@ -176,7 +188,6 @@
 }
 
 .tl-employer-filter--checkbox--wrapper {
-    float: left;
     width: 100%;
     display: inline-block;
 }
