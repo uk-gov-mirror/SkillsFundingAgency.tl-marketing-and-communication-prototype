@@ -31,8 +31,10 @@
     <link rel="stylesheet" href="{{ asset_path }}stylesheets/fonts.css">
     <link rel="stylesheet" href="{{ asset_path }}stylesheets/main.css">
     <link rel="stylesheet" href="{{ asset_path }}stylesheets/employer.css">
+    <link rel="stylesheet" href="{{ asset_path }}stylesheets/fontawesome.css">
+
+    
     <meta property="og:image" content="{{ asset_path }}images/opengraph-image.png?0.24.1">
-    <script src="https://kit.fontawesome.com/4d2525ca6c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="{% block body_id %}{% endblock %}" class="{% block body_classes %}{% endblock %}">
@@ -62,19 +64,19 @@
 
             <ul class="tl-nav--bar tl-nav--bar-employer">
                 <li>
-                    <a id="tl-nav--bar-about" href="/employer">Employer home</a>
+                    <a id="tl-nav--bar-employer-home" href="/employer">Employer home</a>
                 </li>
                 <li>
-                    <a id="tl-nav--bar-why" href="/employer/about">About T Levels</a>
+                    <a id="tl-nav--bar-employer-about" href="/employer/about">About T Levels</a>
                 </li>
                 <li>
-                    <a id="tl-nav--bar-subjects" href="/employer/right-for-you">Are they right for you?</a>
+                    <a id="tl-nav--bar-employer-right" href="/employer/right-for-you">Are they right for you?</a>
                 </li>
                 <li>
-                    <a id="tl-nav--bar-industry" href="/employer/business-benefits">Business benefits</a>
+                    <a id="tl-nav--bar-employer-benefits" href="/employer/business-benefits">Business benefits</a>
                 </li>
                 <li>
-                    <a id="tl-nav--bar-industry" href="/employer/get-involved">Get involved</a>
+                    <a id="tl-nav--bar-employer-involved" href="/employer/get-involved">Get involved</a>
                 </li>
             </ul>
 
@@ -82,7 +84,7 @@
     </div>
 
 
-    </nav>    {% endblock %}
+    </nav>{% endblock %}
 
     {% block content %}
     {% endblock %}

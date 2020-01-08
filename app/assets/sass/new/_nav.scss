@@ -12,11 +12,6 @@
     background: url("../images/logomedium.svg") no-repeat left center;
     min-width: 200px;
     min-height: 40px;
-
-    &:hover {
-        border-bottom: 1px solid $purple;
-        text-decoration: none;
-    }
 }
 
 .tl-nav--employer-switch {
@@ -40,6 +35,11 @@
 }
 
 .tl-nav--bar-employer {
+
+    li a:hover {
+        border-bottom: 2px solid $purple;
+        text-decoration: none;
+    }
 }
 
 .tl-nav--employer {
@@ -51,3 +51,43 @@
         float: right;
     }
 }
+
+
+/* Active states*/
+#tl-employer-home {
+    #tl-nav--bar-employer-home {
+        border-bottom: 2px solid $purple;
+    }
+}
+
+
+#tl-employer-about {
+    #tl-nav--bar-employer-about {
+        border-bottom: 2px solid $purple;
+    }
+}
+
+#tl-employer-right {
+    #tl-nav--bar-employer-right {
+        border-bottom: 2px solid $purple;
+    }
+}
+
+#tl-employer-benefits {
+    #tl-nav--bar-employer-benefits {
+        border-bottom: 2px solid $purple;
+    }
+}
+
+#tl-employer-involved {
+    #tl-nav--bar-employer-involved {
+        border-bottom: 2px solid $purple;
+    }
+}
+
+
+
+
+
+
+
