@@ -12,6 +12,11 @@
     background: url("../images/logomedium.svg") no-repeat left center;
     min-width: 200px;
     min-height: 40px;
+
+    &:hover {
+        border-bottom: 1px solid $purple;
+        text-decoration: none;
+    }
 }
 
 .tl-nav--employer-switch {
