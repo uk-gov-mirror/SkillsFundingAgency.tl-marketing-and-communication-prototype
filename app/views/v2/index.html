@@ -1,0 +1,102 @@
+{% extends "v2/landing.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+{% block content %}
+    <section id="tl-landing" class="tl-addarrow--white--internal">
+        <div class="tl-container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="tl-landing-logo"><a href="{{ protoversion }}" id="tl-nav--bar-logo"><span class="hidden">T Levels - The next level qualification</span></a></h1>
+                </div>
+            </div>
+        </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 tl-landing-box tl-landing-left">
+                    <div class="">
+
+                        <div class="tl-landing-box--content">
+
+                            <h1>The next level qualification</h1>
+                            <p class="tl-lede">Coming in Autumn, T Levels will give you a head start towards the career you want.</p>
+                            <a class="tl-button-employer" href="/{{ protoversion }}/student">I'm a student</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tl-landing-box tl-landing-box--right tl-landing-right">
+                    <div class="">
+                        <div class="tl-landing-box--content">
+                            <h1>Your future workforce</h1>
+                            <p class="tl-lede">T Levels students do a 45-day industry placement, giving you a new pipeline of talent.</p>
+                            <a class="tl-button-employer tl-button-employer--purple" href="/v1/employer">I'm an employer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+
+    <section class="tl-boxes--employer tl-margin-top-40">
+        <div class="tl-container">
+            <div class="row no-gutters">
+                <div class="col-md-6 my-auto">
+                    <div class="tl-box--employer tl-box--employer-left">
+                        <h2>Equivalent to 3 A Levels</h2>
+                        <p>T Levels will be an alternative to A levels, which build vocational rather than academic skills. One T Level is equivalent to 3 A levels, and will help you into skilled employment, university or a higher-level apprenticeship.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/employer/hpimage1.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/employer/hpimage2.jpg" alt="" />
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="tl-box--employer tl-box--employer-right">
+                        <h2>Designed by employers</h2>
+                        <p>80% of each course is spent in the classroom, where students learn the skills that employers need. The remaining 20% is a real-world industry placement, where students put these skills into action.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-6 my-auto">
+                    <div class="tl-box--employer tl-box--employer-left">
+                        <h2>A 45 day industry placement</h2>
+                        <p>Each T Level includes a placement that lasts at least 45 days. Students get hands-on experience in the workplace; employers get early sight of the new talent in their sector. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/employer/hpimage3.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="tl-banner-employer">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col tl-banner--video">
+                <div class="tl-banner--video-image plyr__video-embed" id="player">
+                    <iframe src="https://www.youtube.com/embed/XYQw5rQrwwA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen
+                            allowtransparency></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tl-employer-banner-full">
+    <div class="row no-gutters">
+        <div class="col">
+            <h2 class="tl-banner--nextlevel-employer"><span class="hidden">Welcome to the next level</span></h2>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

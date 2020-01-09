@@ -3,14 +3,14 @@
     "",
     "\\app",
     "\\app\\assets",
-    "\\app\\assets\\images",
     "\\app\\assets\\sass",
-    "\\app\\assets\\sass\\new",
+    "\\app\\assets\\sass\\v1",
+    "\\app\\assets\\sass\\v2",
     "\\app\\views",
-    "\\app\\views\\employer",
-    "\\app\\views\\includes",
-    "\\app\\views\\ur"
+    "\\app\\views\\v1",
+    "\\app\\views\\v2",
+    "\\gulp"
   ],
-  "SelectedNode": "\\app\\assets\\sass\\ur.scss",
+  "SelectedNode": "\\app\\views\\v2\\landing.html",
   "PreviewInSolutionExplorer": false
 }

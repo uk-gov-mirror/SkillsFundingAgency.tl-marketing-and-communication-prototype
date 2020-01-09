@@ -1,5 +1,8 @@
 ﻿{% block top_of_page %}{% endblock %}
-{%- set assetPath = '/govuk/assets' -%}
+{% set protoversion = 'v2' %}
+
+{%- set asset_path = '/public/' + protoversion + '/' -%}
+
 
 <!DOCTYPE html>
 <head>
@@ -28,9 +31,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset_path }}images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="{{ asset_path }}stylesheets/fonts.css">
-    <link rel="stylesheet" href="{{ asset_path }}stylesheets/main.css">
-    <link rel="stylesheet" href="{{ asset_path }}stylesheets/employer.css">
+    <link rel="stylesheet" href="/public/stylesheets/fonts.css">
+    <link rel="stylesheet" href="/public/stylesheets/{{ protoversion }}.css">
     <meta property="og:image" content="{{ asset_path }}images/opengraph-image.png?0.24.1">
 </head>
 
@@ -39,26 +41,15 @@
     {% endblock %}
 
     {% block header %}
-    {% include "includes/header.html" %}
-    {% endblock %}
-
-
-    {% block nav %}
-    <nav id="tl-nav" class="tl-container">
-        <h1 class="tl-nav--logo--landing"><a href="/" id="tl-nav--bar-logo"><span class="hidden">T Levels - The next level qualification</span></a></h1>
-    </nav>    
+    {% include protoversion + "/includes/header.html" %}
     {% endblock %}
 
     {% block content %}
     {% endblock %}
 
-    {% block footer %}
-    {% include "includes/footernew.html" %}
-    {% endblock %}
-
     {% block body_end %}
     {% block scripts %}
-    {% include "includes/scripts.html" %}
+    {% include protoversion + "/includes/scripts.html" %}
     {% endblock %}
     {% endblock %}
 </body>

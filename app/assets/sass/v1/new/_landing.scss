@@ -1,0 +1,108 @@
+#tl-landing {
+
+    * {
+        color: white;
+    }
+
+    h1 {
+        font-size: 5vw;
+        line-height: 4.8vw;
+
+        @media (min-width: 1150px) {
+            font-size: 68px;
+            line-height: 58px;
+        }
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    .tl-landing-box {
+        padding: 8vw 20px;
+        overflow: auto;
+
+        @media (max-width: 992px) {
+            padding: 40px;
+        }
+    }
+
+    .tl-landing-box--right {
+        text-align: right;
+    }
+}
+
+.tl-button-employer {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    z-index: 100;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        position: absolute;
+        background-color: transparent;
+        left: 4px;
+        top: 4px;
+        z-index: 99;
+    }
+}
+
+.tl-button-employer--purple {
+    background-color: $purple;
+
+    &:after {
+        border: 2px solid $purple;
+    }
+}
+
+
+.tl-button-employer-involved {
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+
+.tl-lede {
+    font-size: 20px;
+}
+
+.tl-landing-left {
+    background-image: image("employer/hpbanner2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+
+    .tl-landing-box--content {
+        float: right;
+    }
+}
+
+.tl-landing-right {
+    background-image: image("employer/hpbanner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+}
+
+.tl-landing-box--content {
+    max-width: 570px;
+    float: left;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
