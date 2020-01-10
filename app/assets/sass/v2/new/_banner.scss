@@ -80,6 +80,16 @@
     .tl-employer-banner-box {
         padding: 6vw 0;
     }
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+
+
+        h1 {
+            font-size: 40px;
+            line-height: 36px;
+        }
+    }
 }
 
 #tl-employer-right--banner {

@@ -31,14 +31,23 @@
     h2 {
         font-size: 40px;
         margin: 20px 0;
+        line-height: 36px;
     }
 
     .tl-employer-box {
         padding: 2vw 00px 2vw 50px;
+
+        @media (max-width:767px) {
+            padding: 0 !important;
+        }
     }
 
     .tl-employer-box--left {
         padding: 2vw 50px 2vw 0px;
+    }
+
+    @media (max-width:767px) {
+        padding: 20px 0 !important;
     }
 }
 
@@ -48,6 +57,10 @@
     float: right;
     max-height: 550px;
 
+    @media (max-width:767px) {
+        width: 100%;
+        margin: 15px 0;
+    }
 }
 
 .tl-employer--big-image--left {
@@ -69,6 +82,16 @@
         margin-top: 40px;
         font-size: 20px;
     }
+
+    h2 {
+        @media (max-width:767px) {
+            padding: 20px 0 !important;
+        }
+    }
+
+    @media (max-width:767px) {
+        padding: 20px 0 !important;
+    }
 }
 
 .tl-employer--boxes-white {
@@ -76,6 +99,10 @@
     color: black;
     font-size: 14px;
     padding: 6vw 20px;
+
+    @media (max-width:767px) {
+        padding: 20px 0 !important;
+    }
 }
 
 .tl-employer--boxes-purple {
@@ -83,6 +110,10 @@
     color: white;
     font-size: 14px;
     padding: 6vw 20px;
+
+    @media (max-width:767px) {
+        padding: 20px 0 !important;
+    }
 }
 
 
@@ -91,6 +122,10 @@
     color: black;
     font-size: 14px;
     padding: 2vw 20px;
+
+    @media (max-width:767px) {
+        padding: 20px 0 !important;
+    }
 }
 
 .tl-employer-right-route {
@@ -212,8 +247,21 @@
 }
 
 .tl-employer--logos {
+
+    h2 {
+        margin-bottom: 80px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
     img {
         padding: 0 10px;
+
+        @media (max-width: 767px) {
+            padding: 20px
+        }
     }
 }
 
