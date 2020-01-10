@@ -34,7 +34,11 @@
     }
 
     .tl-employer-box {
-        padding: 2vw 20px 2vw 50px;
+        padding: 2vw 00px 2vw 50px;
+    }
+
+    .tl-employer-box--left {
+        padding: 2vw 50px 2vw 0px;
     }
 }
 
@@ -210,5 +214,14 @@
 .tl-employer--logos {
     img {
         padding: 0 10px;
+    }
+}
+
+.tl-employer-benefits-box {
+    p {
+        border-left: 2px solid $purple;
+        padding: 0 0 0 15px;
+        margin-top: 30px;
+        display: inline-block;
     }
 }
