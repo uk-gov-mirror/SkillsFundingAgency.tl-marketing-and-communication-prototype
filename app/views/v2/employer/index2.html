@@ -1,0 +1,121 @@
+{% extends "../layoutemployeralt.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+
+{% block body_id %}tl-employer-home{% endblock %}
+{% block content %}
+<section id="tl-employer-home--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-employer-banner-box">
+                    <h1>Meet the workforce of the future </h1>
+                    <p class="tl-lede">
+                        T Levels are new qualifications designed with employers to give young people the knowledge and skills your business needs.
+                    </p>
+                    <p class="tl-lede">
+                        They combine classroom learning with real-world industry placements, covering areas from health and construction to media and science.
+                    </p>
+                    <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/about">Find out more about T Levels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 my-auto">
+                <img class="tl-employer--big-image" src="{{ asset_path }}images/employer/businessbenefits1.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 my-auto">
+                <div class="tl-employer-box">
+                    <h2>A skilled industry placement</h2>
+                    <p>
+                        Industry placements are happening now in readiness for the launch of T Levels. Employers like you are already finding them a great way to spot and nurture young talent.
+                    </p>
+                    <p>
+                        They last a minimum of 315 hours (around 45 days) and are arranged in partnership with a local college or school.
+                    </p>                    
+                    <a class="tl-button-employer tl-margin-top-30" href="#">Discover industry placements</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer-box tl-employer--boxes-black">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col">
+                <h2>Business benefits</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits2.jpg" alt="" />
+                    <p>Industry placements are an ideal solution for entry-level skills</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits3.jpg" alt="" />
+                    <p>
+                        Recruit directly through schools and colleges.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits4.jpg" alt="" />
+                    <p>
+                        Build the skills your industry needs.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/business-benefits">Explore the benefits</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 order-2 my-auto">
+                <div class="tl-employer-box tl-employer-box--left">
+                    <h2>The bottom line</h2>
+                    <p>
+                        Industry placements are a cost-effective way to bring new talent into your organisation. You'll be supported throughout the process by the school or college, which helps to reduce the time and effort required to onboard and manage a placement student.
+                    </p>
+
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/the-costs">What it costs</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 order-1 order-md-12 my-auto">
+                <img class="tl-employer--big-image tl-employer--big-image--left" src="{{ asset_path }}images/employer/whatitcosts.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    {% include protoversion + "/includes/employerCTA.html" %}
+
+
+{% endblock %}
