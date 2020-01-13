@@ -282,3 +282,34 @@
     position: relative;
     top: -12px;
 }
+
+.tl-list--arrows {
+    li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 5px;
+
+        &:before {
+            background-image: image("employer/arrow.svg");
+            content: "";
+            display: inline-block;
+            background-size: contain;
+            width: 17px;
+            top: 7px;
+            position: absolute;
+            margin-right: 7px;
+            left: 0;
+            height: 16px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.tl-list--arrows-white {
+    li {
+
+        &:before {
+            background-image: image("employer/arrowwhite.svg");
+        }
+    }
+}
