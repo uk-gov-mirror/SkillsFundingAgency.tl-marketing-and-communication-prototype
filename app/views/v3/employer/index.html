@@ -1,0 +1,147 @@
+{% extends "../layoutemployer.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+
+{% block body_id %}tl-employer-home{% endblock %}
+{% block content %}
+<section id="tl-employer-home--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-employer-banner-box">
+                    <h1>A NEW PIPELINE OF TALENT </h1>
+                    <p class="tl-lede">T Levels are a revolution in vocational education. At the heart of each course, a 45-day industry placement that gives young people the attitude and skills to thrive in the workplace. To ensure the success of T Levels, we need employers to offer placements on a scale never seen before.</p>
+                    <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/about">Find out more about T Levels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 my-auto">
+                <img class="tl-employer--big-image" src="{{ asset_path }}images/employer/businessbenefits1.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 my-auto">
+                <div class="tl-employer-box">
+                    <h2>A skilled industry placement</h2>
+                    <p>
+                        Schools and colleges across England have thousands of students ready to start industry placements in areas like:
+                    </p>
+                    <ul class="tl-list tl-list--arrows">
+                        <li>construction</li>
+                        <li>digital</li>
+                        <li>education and childcare</li>
+                        <li>health and science</li>
+                    </ul>
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/skills-available">Check what skills are available</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer-box tl-employer--boxes-black">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col">
+                <h2>Business benefits</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits2.jpg" alt="" />
+                    <p>Industry placements are an ideal solution for entry-level skills.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits3.jpg" alt="" />
+                    <p>
+                        Recruit directly through schools and colleges.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tl-employer-box tl-employer-benefits-box">
+                    <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits4.jpg" alt="" />
+                    <p>Build the skills your industry needs.</p>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/business-benefits">View all the business benefits</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 order-2 my-auto">
+                <div class="tl-employer-box tl-employer-box--left">
+                    <h2>WHAT IT COSTS</h2>
+                    <p>
+                        Industry placements are a cost-effective way to bring new talent into your organisation. You'll be supported throughout the process by the school or college, which helps to reduce the time and effort required to manage a placement student.
+                    </p>
+
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/the-costs">What is the cost of an industry placement?</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 order-1 order-md-12 my-auto">
+                <img class="tl-employer--big-image tl-employer--big-image--left" src="{{ asset_path }}images/employer/whatitcosts.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tl-employer--boxes-white tl-employer--logos">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col">
+                <h2>EMPLOYERS SUPPORTING T LEVELS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo7.png" alt="" />
+            </div>
+            <div class="col-md-2  col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo2.png" alt="" />
+            </div>
+            <div class="col-md-2  col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo3.png" alt="" />
+            </div>
+            <div class="col-md-2  col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo4.png" alt="" />
+            </div>
+            <div class="col-md-2  col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo5.png" alt="" />
+            </div>
+            <div class="col-md-2 col-6 my-auto">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo6.png" alt="" />
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    {% include protoversion + "/includes/employerCTA.html" %}
+
+
+{% endblock %}
