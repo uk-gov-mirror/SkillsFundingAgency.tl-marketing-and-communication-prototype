@@ -1,4 +1,4 @@
-.tl-button {
+/*.tl-button {
     background-color: black;
     color: white;
     display: inline-block;
@@ -18,41 +18,125 @@
     }
 
 
-}
+}*/
 
 
-.tl-button--arrow {
-    &:after {
+
+.tl-button {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    z-index: 100;
+    border: none;
+    transition: 0.3s ease-in;
+
+    &:before {
         content: "";
-        background: image("buttonarrow.svg");
-        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        position: absolute;
+        background-color: transparent;
+        left: 4px;
+        top: 4px;
+        z-index: 99;
+    }
+
+    &:after {
+        background-image: image("employer/arrowwhite.svg");
+        content: "";
+        position: absolute;
         background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        display: inline-block;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        top: 18px;
+        margin-right: 20px;
+        right: 0;
         margin-left: 10px;
+        opacity: 0;
+        transition: 0.3s ease-in;
+        height: 16px;
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        padding-right: 50px;
+
+        &:after {
+            display: inline;
+            opacity: 1;
+            transition: 0.3s ease-in;
+        }
+    }
+
+    &:active {
+        top: 2px;
+        left: 2px;
+        transition: 0s;
+
+        &:before {
+            top: 2px;
+            left: 2px;
+            transition: 0s;
+        }
+    }
+
+    &--purple {
+        background-color: $purple;
+
+        &:before {
+            border: 2px solid $purple;
+        }
+    }
+
+    &--orange {
+        background-color: $orange;
+
+        &:before {
+            border: 2px solid $orange;
+        }
+
+        &:after {
+            background-image: image("employer/arrowblack.svg");
+        }
     }
 }
 
-.tl-button--orange {
-    background-color: $orange;
-    color: black;
-}
 
-.tl-button--purple {
-    background-color: $purple;
-}
+    .tl-button--arrow {
+        &:after {
+            content: "";
+            background: image("buttonarrow.svg");
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+        }
+    }
 
-.tl-button--salmon {
-    background-color: $salmon;
-    color: black;
-}
+    .tl-button--orange {
+        background-color: $orange;
+        color: black;
+    }
 
-.tl-button--white {
-    background-color: white;
-    border: 3px solid black;
-    color: black;
-    font-weight: bold;
-}
+
+
+    .tl-button--salmon {
+        background-color: $salmon;
+        color: black;
+    }
+
+    .tl-button--white {
+        background-color: white;
+        border: 3px solid black;
+        color: black;
+        font-weight: bold;
+    }
