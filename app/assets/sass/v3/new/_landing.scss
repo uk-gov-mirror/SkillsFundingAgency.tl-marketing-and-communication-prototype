@@ -1,8 +1,11 @@
 #tl-landing {
     position: relative;
+    z-index: unset;
+
 
     * {
         color: white;
+        z-index: unset;
     }
 
     h1 {
@@ -194,7 +197,7 @@
     .tl-landing-logo {
         position: absolute;
         top: 20px;
-        z-index: 999;
+        z-index: 999 !important;
 
         a {
             padding: 10px 0;
