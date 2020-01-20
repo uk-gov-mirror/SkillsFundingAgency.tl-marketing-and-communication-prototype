@@ -7,15 +7,15 @@
 
 
 {% block content %}
-<section id="tl-subjects-content-1" class="tl-background--purple">
+<section id="tl-subjects-content-1" class="tl-background--orange">
     <div class="tl-container">
         <div class="row no-gutters">
             <div class="col-md-6">
                 <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets11.jpg" alt="" />
             </div>
             <div class="col-md-6">
-                <div class="tl-box tl-box--purple">
-                    <h2 class="text-center"><span class="no-break">T Level</span> subjects</h2>
+                <div class="tl-box tl-box--orange">
+                    <h2><span class="no-break">T Level</span> subjects</h2>
                     <p>The first 3 T Levels start in September 2020 at selected schools and colleges in England. </p>
                     <p>More T Levels start in the following years until all 25 are available, covering everything from agriculture to catering and engineering to science.</p>
                 </div>
@@ -23,28 +23,14 @@
         </div>
     </div>
 </section>
-<section id="tl-search">
-    <div class="tl-container">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <div class="tl-search--content">
-                    <h2 class="text-center tl-desktop-only"><span class="text-outline--white">Find a T Level</span><br /><span class="text-purple"> near you</span></h2>
-                    <h2 class="text-center tl-tablet-down"><a href="/find" class="tl-underline-none"><span class="text-outline--white">Find a </span><span class="text-purple tl-arrow--big">course near you</span></a></h2>
-                    <form class="tl-search--form text-center tl-desktop-only" action="find">
-                        <label for="Postcode" class="hidden">Postcode</label><input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
-                        <button id="tl-find-button" type="submit" class="tl-button tl-button--orange" value="Search">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% include protoversion + "/includes/searchnew.html" %}
+
 
 <section id="tl-subjects-content-2" class="tl-container">
     <div class="row no-gutters">
         <div class="col-md-6 order-2">
-            <div class="tl-box tl-box--wide tl-box--white">
-                <h2 class="text-center">September 2020</h2>
+            <div class="tl-box tl-box--white">
+                <h2>September 2020</h2>
                 <p class="tl-margin-top-0">Click on course names to find out more.</p>
                 <ul class="tl-list">
                     <li>
@@ -109,7 +95,7 @@
 
         <div class="col-md-6">
             <div class="tl-box tl-box--wide tl-box--white">
-                <h2 class="text-center">September 2021</h2>
+                <h2>September 2021</h2>
                 <p class="tl-margin-top-0">Click on course names to find out more.</p>
 
                 <ul class="tl-list">
@@ -239,7 +225,7 @@
     <div class="row no-gutters">
         <div class="col-md-6 order-2">
             <div class="tl-box tl-box--wide tl-box--white">
-                <h2 class="text-center">September 2022</h2>
+                <h2>September 2022</h2>
                 <ul class="tl-list">
                     <li>Accountancy</li>
                     <li>Design and development</li>
@@ -264,7 +250,7 @@
 
         <div class="col-md-6">
             <div class="tl-box tl-box--wide tl-box--white">
-                <h2 class="text-center">September 2023</h2>
+                <h2>September 2023</h2>
                 <ul class="tl-list">
                     <li>Agriculture, land management and production</li>
                     <li>Animal care and management</li>

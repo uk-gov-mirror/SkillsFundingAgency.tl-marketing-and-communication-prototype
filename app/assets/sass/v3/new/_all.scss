@@ -8,3 +8,25 @@
 body {
     overflow-x: hidden;
 }
+
+* {
+    z-index: 0;
+}
+
+.tl-link--new {
+    border-bottom: 2px solid $orange;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+    &:hover {
+        border-bottom: 2px solid black;
+    }
+
+    &--white {
+        border-bottom: 2px solid $orange;
+
+        &:hover {
+            border-bottom: 2px solid $white;
+        }
+    }
+}

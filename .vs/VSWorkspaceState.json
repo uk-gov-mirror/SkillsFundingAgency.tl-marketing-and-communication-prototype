@@ -4,13 +4,15 @@
     "\\app",
     "\\app\\assets",
     "\\app\\assets\\sass",
-    "\\app\\assets\\sass\\v1",
-    "\\app\\assets\\sass\\v2",
+    "\\app\\assets\\sass\\v3",
+    "\\app\\assets\\sass\\v3\\helpers",
+    "\\app\\assets\\v3",
+    "\\app\\assets\\v3\\images",
+    "\\app\\assets\\v3\\images\\employer",
     "\\app\\views",
-    "\\app\\views\\v1",
-    "\\app\\views\\v2",
-    "\\gulp"
+    "\\app\\views\\v3",
+    "\\app\\views\\v3\\employer"
   ],
-  "SelectedNode": "\\app\\views\\v2\\landing.html",
+  "SelectedNode": "\\app\\assets\\sass\\v3\\components\\_footer.scss",
   "PreviewInSolutionExplorer": false
 }

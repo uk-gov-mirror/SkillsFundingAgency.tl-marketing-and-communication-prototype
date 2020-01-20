@@ -4,7 +4,7 @@
 }
 
 .tl-search--content {
-    padding: 40px;
+    padding: 70px 0;
 
     h2 {
         margin-top: 1rem;
@@ -16,7 +16,7 @@
 }
 
 .tl-search--form {
-    padding: 20px;
+    padding: 20px 0;
     font-size: 16px;
 
     .tl-input {
@@ -31,7 +31,7 @@
 
     .tl-input--select {
         position: relative;
-        background: url(../images/arrow3.svg) 96% / 5% no-repeat #eee;
+        background: image("arrow3.svg") 96% / 5% no-repeat #eee;
         cursor: pointer;
     }
 
@@ -65,13 +65,21 @@
 
     .tl-results-box {
         background-color: white;
-        padding: 20px;
+        padding: 25px 20px 40px 20px;
         margin: 20px 0;
         float: left;
         width: 100%;
 
         h3 {
             font-size: 24px;
+        }
+
+        .tl-results-box--subheader {
+            margin: 0 0 20px 0;
+        }
+
+        .tl-results-box--listheader {
+            margin: 10px 0 0 0;
         }
 
         .tl-results-box--distance {
@@ -81,7 +89,7 @@
             float: right;
             background-color: black;
             position: relative;
-            top: -20px;
+            top: -25px;
             right: -20px;
             padding: 10px 20px;
             color: white;
@@ -93,3 +101,6 @@
     }
 }
 
+#tl-search-results {
+    z-index: 0;
+}
