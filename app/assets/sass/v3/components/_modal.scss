@@ -75,3 +75,13 @@
         top: -1px;
     }
 }
+
+.modal-open {
+    * {
+        z-index: unset;
+    }
+
+    .tl-modal.active {
+        z-index: 999 !important;
+    }
+}

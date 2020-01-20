@@ -49,30 +49,18 @@
         <div class="col-md-6 flex-center order-2 ">
             <div class="tl-box tl-box--orange">
                 <h2>Created with business</h2>
-                <p>T Levels have been designed in partnership with businesses and employers to give you the knowledge and skills to succeed in the workplace.</p>
+                <p>T Levels have been designed in partnership with businesses and employers to give you the skills and knowledge to succeed in the workplace.</p>
+                <p>Your course includes a 45-day industry placement with a local employer giving you real experience in your chosen area of work.</p>
             </div>
 
         </div>
         <div class="col-md-6 order-1 order-md-12">
-            <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets23.png" alt="" />
+            <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets2.jpg" alt="" />
         </div>
     </div>
 </section>
 
-<section id="tl-search">
-    <div class="tl-container">
-        <div class="row no-gutters">
-            <div class="col-12">
-                <div class="tl-search--content">
-                    <h2 class="text-center"><span class="text-outline--white">Find a T Level</span><br /><span class="text-orange"> near you</span></h2>
-                    <form class="tl-search--form text-center" action="find">
-                        <label for="Postcode" class="hidden">Postcode</label><input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
-                        <button id="tl-find-button" type="submit" class="tl-button tl-button--orange" value="Search">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% include protoversion + "/includes/searchnew.html" %}
+
 
 {% endblock %}
