@@ -4,7 +4,7 @@
     padding: 40px;
 
     @media (max-width: 767px) {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     a {
@@ -33,9 +33,18 @@
     li {
         margin: 15px 0;
 
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 5px 0;
+        }
+
         &:after {
             content: "|";
             margin: 0 20px;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
 
         &:last-child {
@@ -107,9 +116,17 @@
 
 .tl-footer-student--right {
     float: right;
+
+    @media (max-width: 767px) {
+        float: left;
+    }
 }
 
 
 .tl-footer-student-barright {
     border-right: 1px solid black;
+
+    @media (max-width: 767px) {
+        border: none;
+    }
 }
