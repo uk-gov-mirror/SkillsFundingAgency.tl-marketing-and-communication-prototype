@@ -38,13 +38,7 @@
         line-height: 36px;
     }
 
-    .tl-employer-box {
-        padding: 2vw 00px 2vw 50px;
 
-        @media (max-width:767px) {
-            padding: 20px !important;
-        }
-    }
 
     .tl-employer-box--left {
         padding: 2vw 50px 2vw 0px;
@@ -52,6 +46,14 @@
 
     @media (max-width:767px) {
         padding: 0 !important;
+    }
+}
+
+.tl-employer-box {
+    padding: 2vw 00px 2vw 50px;
+
+    @media (max-width:767px) {
+        padding: 20px !important;
     }
 }
 
@@ -269,7 +271,7 @@
 
 .tl-employer-benefits--arrow {
     min-height: 53px;
-    min-width: 45px;
+    min-width: 35px;
     max-height: 30px;
     width: auto;
     margin-right: 10px;
