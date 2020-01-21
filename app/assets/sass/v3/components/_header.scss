@@ -2,6 +2,10 @@
     background-color: black;
     padding: 8px 0;
 
+    @media(max-width: 767px) {
+        padding: 8px 20px;
+    }
+
     .tl-gov-logo {
         width: 100%;
         max-width: 208px;
