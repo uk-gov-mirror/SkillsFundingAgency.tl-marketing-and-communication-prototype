@@ -75,6 +75,10 @@
 #tl-employer-home {
     #tl-nav--bar-employer-home {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
     }
 }
 
@@ -82,24 +86,40 @@
 #tl-employer-about {
     #tl-nav--bar-employer-about {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
     }
 }
 
 #tl-employer-right {
     #tl-nav--bar-employer-right {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
     }
 }
 
 #tl-employer-benefits {
     #tl-nav--bar-employer-benefits {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
     }
 }
 
 #tl-employer-involved {
     #tl-nav--bar-employer-involved {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
     }
 }
 
