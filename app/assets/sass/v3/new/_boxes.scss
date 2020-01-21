@@ -42,7 +42,7 @@
         padding: 2vw 00px 2vw 50px;
 
         @media (max-width:767px) {
-            padding: 0 20px !important;
+            padding: 20px !important;
         }
     }
 
@@ -51,7 +51,7 @@
     }
 
     @media (max-width:767px) {
-        padding: 20px 0 !important;
+        padding: 0 !important;
     }
 }
 
@@ -63,7 +63,7 @@
 
     @media (max-width:767px) {
         width: 100%;
-        margin: 15px 0;
+        margin: 0;
     }
 }
 
@@ -93,9 +93,6 @@
         }
     }
 
-    @media (max-width:767px) {
-        padding: 20px 0 !important;
-    }
 }
 
 .tl-employer--boxes-white {
@@ -104,9 +101,6 @@
     font-size: 14px;
     padding: 6vw 20px;
 
-    @media (max-width:767px) {
-        padding: 20px 0 !important;
-    }
 }
 
 .tl-employer--boxes-purple {
@@ -115,9 +109,6 @@
     font-size: 14px;
     padding: 6vw 20px;
 
-    @media (max-width:767px) {
-        padding: 20px 0 !important;
-    }
 }
 
 
@@ -127,9 +118,6 @@
     font-size: 14px;
     padding: 2vw 20px;
 
-    @media (max-width:767px) {
-        padding: 20px 0 !important;
-    }
 }
 
 .tl-employer-right-route {
@@ -276,6 +264,7 @@
         margin-top: 30px;
         display: inline-block;
     }
+
 }
 
 .tl-employer-benefits--arrow {

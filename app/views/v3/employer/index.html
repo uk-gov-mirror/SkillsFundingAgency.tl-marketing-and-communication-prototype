@@ -10,8 +10,13 @@
         <div class="row no-gutters">
             <div class="col-md-8 my-auto">
                 <div class="tl-employer-banner-box">
-                    <h1>A NEW PIPELINE OF TALENT </h1>
-                    <p class="tl-lede">T Levels are a revolution in vocational education. At the heart of each course, a 45-day industry placement that gives young people the attitude and skills to thrive in the workplace. To ensure the success of T Levels, we need employers to offer placements on a scale never seen before.</p>
+                    <h1>MEET THE WORKFORCE OF THE FUTURE</h1>
+                    <p class="tl-lede">
+                        T Levels are new qualifications that have been designed with employers. One T level is the equivalent to 3 A Levels and will give young people the attitude and skills to thrive in the workplace.
+                    </p>
+                    <p class="tl-lede">
+                        At the heart of each course, a 45-day industry placement will give you early access to the brightest talent entering your market.
+                    </p>
                     <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/about">Find out more about T Levels</a>
                 </div>
             </div>
@@ -23,15 +28,18 @@
 <section class="tl-employer--boxes">
     <div class="tl-container">
         <div class="row no-gutters">
-            <div class="col-md-6 my-auto">
+            <div class="col-md-6 order-2 my-auto">
                 <img class="tl-employer--big-image" src="{{ asset_path }}images/employer/businessbenefits1.jpg" alt="" />
             </div>
 
-            <div class="col-md-6 my-auto">
+            <div class="col-md-6 order-1 order-md-12 my-auto">
                 <div class="tl-employer-box">
-                    <h2>A skilled industry placement</h2>
+                    <h2>INDUSTRY PLACEMENTS ARE HAPPENING NOW</h2>
                     <p>
-                        Schools and colleges across England have thousands of students ready to start industry placements in areas like:
+                        To prepare for T Levels, UK employers are trialling industry placements to spot and nurture young talent.
+                    </p>
+                    <p>
+                        You can join this vocational revolution right now, with students ready to start placements in areas like:
                     </p>
                     <ul class="tl-list tl-list--arrows">
                         <li>construction</li>
@@ -67,7 +75,7 @@
                 <div class="tl-employer-box tl-employer-benefits-box">
                     <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits3.jpg" alt="" />
                     <p>
-                        Recruit directly through schools and colleges.
+                        Recruit directly through colleges and schools.
                     </p>
                 </div>
             </div>
@@ -93,13 +101,12 @@
         <div class="row no-gutters">
             <div class="col-md-6 order-2 my-auto">
                 <div class="tl-employer-box tl-employer-box--left">
-                    <h2>WHAT IT COSTS</h2>
+                    <h2>THE BOTTOM LINE</h2>
                     <p>
-                        Industry placements are a cost-effective way to bring new talent into your organisation. You'll be supported throughout the process by the school or college, which helps to reduce the time and effort required to manage a placement student.
+                        Industry placements are a cost-effective way to bring new talent into your organisation. You'll be supported throughout the process by the college or school, which helps to reduce the time and effort required to manage a placement student.
                     </p>
 
-                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/the-costs">What is the cost of an industry placement?</a>
-
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/the-costs"><span class="d-inline-block d-md-none">What it costs</span><span class="d-none d-md-inline-block">What is the cost of an industry placement?</span></a>
                 </div>
             </div>
 
@@ -110,38 +117,39 @@
     </div>
 </section>
 
-<section class="tl-employer--boxes-white tl-employer--logos">
+<section id="tl-banner-employer">
     <div class="tl-container">
-        <div class="row">
-            <div class="col">
-                <h2>EMPLOYERS SUPPORTING T LEVELS</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo7.png" alt="" />
-            </div>
-            <div class="col-md-2  col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo2.png" alt="" />
-            </div>
-            <div class="col-md-2  col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo3.png" alt="" />
-            </div>
-            <div class="col-md-2  col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo4.png" alt="" />
-            </div>
-            <div class="col-md-2  col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo5.png" alt="" />
-            </div>
-            <div class="col-md-2 col-6 my-auto">
-                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/logo6.png" alt="" />
-            </div>
-        </div>
+        <div class="row no-gutters">
+            <div class="tl-employer-box">
 
-    </div>
+                <div class="col-lg-8">
+                    <h2 class="tl-margin-top-60">What employers say about industry placements</h2>
+                </div>
+
+                <div class="col-12 tl-banner--video">
+                    <div class="tl-banner--video-image plyr__video-embed" id="player">
+                        <iframe src="https://www.youtube.com/embed/fWLUtLBc1rY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1"
+                                allowfullscreen
+                                allowtransparency></iframe>
+                    </div>
+                </div>
+                <div class="col-12 tl-margin-bottom-30">
+                    <p><a class="tl-link--new tl-link--new--white" href="#">Read a transcript of this video</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
 </section>
-
     {% include protoversion + "/includes/employerCTA.html" %}
 
 
+{% endblock %}
+{% block scripts %}
+{% include protoversion + "/includes/scripts.html" %}
+
+<script>
+    setTimeout(() => {
+        player.poster = 'https://i.imgur.com/R0vwNZt.jpg';
+    }, 500)
+</script>
 {% endblock %}

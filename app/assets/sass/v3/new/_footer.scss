@@ -1,11 +1,11 @@
 #tl-footer-employer {
     background-color: black;
     color: white;
-    border-top: 1px solid $darkgrey;
-    padding: 40px;
+    padding: 40px 10px;
+
 
     @media (max-width: 767px) {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     a {
@@ -21,26 +21,42 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        margin: 50px 0 0 0;
+        margin: 0;
         padding: 2px 0;
-        justify-content: center;
-        border-left: 1px solid $darkgrey;
-        border-right: 1px solid $darkgrey;
+        align-items: center;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+        border: none;
+    }
+
+    li {
+        margin: 15px 0;
 
         @media (max-width: 767px) {
-            display: block;
-            border: none;
+            width: 100%;
+            margin: 5px 0;
         }
 
-        li {
-            margin-right: 15px;
-            display: flex;
+        &:after {
+            content: "|";
+            margin: 0 20px;
 
-            &:last-child {
-                margin-right: 0;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &:after {
+                content: "";
             }
         }
     }
+
 
     .tl-footer-employer--link {
         padding-bottom: 5px;
@@ -58,8 +74,7 @@
     }
 }
 
-.tl-footer--social--employer {
-    margin-top: 25px;
+.tl-footer--social--student {
     text-align: right;
 
     a {
@@ -72,8 +87,48 @@
 }
 
 
-.tl-footer-employer--lower {
+.tl-footer-student--lower {
     border-top: 1px solid $darkgrey;
     margin-top: 20px;
     padding-top: 20px;
+
+
+    ul {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    li {
+        margin: 0 !important;
+
+        &:nth-last-child(2) {
+
+            &:after {
+                content: "" !important;
+            }
+        }
+    }
+}
+
+.tl-footer-student--left {
+    float: left;
+}
+
+.tl-footer-student--right {
+    float: right;
+
+    @media (max-width: 767px) {
+        float: left;
+        margin-top: 30px;
+    }
+}
+
+
+.tl-footer-student-barright {
+    border-right: 1px solid $darkgrey;
+
+    @media (max-width: 767px) {
+        border: none;
+    }
 }

@@ -64,6 +64,10 @@
     .tl-nav--hamburger {
         float: right;
     }
+
+    @media(max-width: 992px) {
+        padding: 10px 20px !important
+    }
 }
 
 
