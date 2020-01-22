@@ -107,19 +107,23 @@
         }
     }
 
-    .tl-landing-logo {
-        position: absolute;
-        top: 20px;
-        z-index: 999 !important;
+.tl-landing-logo {
+    position: absolute;
+    top: 20px;
+    z-index: 999 !important;
 
-        a {
-            padding: 10px 0;
-            float: left;
-            background: image("logomediumwhite.svg") no-repeat left center;
-            min-width: 200px;
-            min-height: 40px;
-        }
+    @media (max-width: 767px) {
+        margin-left: 20px;
     }
+
+    a {
+        padding: 10px 0;
+        float: left;
+        background: image("logomediumwhite.svg") no-repeat left center;
+        min-width: 200px;
+        min-height: 40px;
+    }
+}
 
 
     .tl-landing-logo--new {
