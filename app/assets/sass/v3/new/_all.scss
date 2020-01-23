@@ -136,18 +136,39 @@ body {
 
 
 .tl-employer--cta {
+    background-image: image("arrow1.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 120px;
+
+    @media (max-width: 767px) {
+        background-image: none;
+    }
+
+
 
     h4 {
     }
 
     h2 {
-        font-size: 30px;
-        line-height: 40px;
-        word-break: break-all;
-    }
-
-    .tl-employer--cta--email {
         font-size: 20px;
         line-height: 30px;
+        word-break: break-all;
+        text-transform: lowercase;
+
+        i {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .employer--cta--link {
+        padding: 0 0 5px 0;
+        border-bottom: 2px solid white;
+        text-decoration: none;
+        color: black;
     }
 }
