@@ -145,19 +145,23 @@
             color: $purple;
             display: inline-block;
             float: left;
-            font-size: 50px;
+            font-size: 26px;
             min-height: 40px;
-            top: 7px;
+            top: 0;
             position: relative;
+            margin-right: 10px;
         }
+    }
+
+    p, ul {
+        margin-left: 20px;
     }
 
     &--purple {
         h3 {
-        span {
-            color: black;
-
-        }
+            span {
+                color: black;
+            }
         }
     }
 }
@@ -266,6 +270,7 @@
         margin-top: 30px;
         display: inline-block;
     }
+
 
 }
 

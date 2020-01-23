@@ -22,7 +22,7 @@
 
 
 #tl-employer-home--banner {
-    background-image: image("employer/employerbanner1.jpg");
+    background-image: image("employer/hpbanner1.jpg");
     background-position: center;
     background-size: cover;
     background-color: black;
@@ -34,13 +34,9 @@
     }
 
     h1 {
-        font-size: 50px;
-        line-height: 42px;
+        font-size: 60px;
+        line-height: 52px;
 
-        @media (min-width: 1150px) {
-            font-size: 50px;
-            line-height: 42px;
-        }
 
         @media (max-width: 767px) {
             font-size: 40px;
@@ -69,17 +65,20 @@
     }
 
     h1 {
-        font-size: 5vw;
-        line-height: 4.8vw;
-
-        @media (min-width: 1150px) {
-            font-size: 68px;
-            line-height: 58px;
-        }
+        font-size: 60px;
+        line-height: 52px;
     }
 
     p {
         padding: 20px 0;
+    }
+
+    .tl-employer-box {
+        padding: 2vw 20px;
+
+        @media (max-width: 767px) {
+            padding: 40px 20px !important;
+        }
     }
 
     .tl-employer-banner-box {
@@ -97,45 +96,45 @@
     }
 }
 
-#tl-employer-right--banner {
-    background-color: $purple;
-    color: white;
-    background-repeat: no-repeat;
-    padding: 0 20px;
-    overflow: hidden;
-
-
-
-    * {
+    #tl-employer-right--banner {
+        background-color: $purple;
         color: white;
-    }
-
-    h1 {
-        font-size: 4vw;
-        line-height: 3.8vw;
-    }
-
-    .tl-employer--big-image {
-        max-height: 650px;
-    }
+        background-repeat: no-repeat;
+        padding: 0 20px;
+        overflow: hidden;
 
 
 
-    .tl-employer-banner-box {
-        padding: 6vw 0;
-    }
-
-    @media(max-width: 767px) {
-        padding: 0;
+        * {
+            color: white;
+        }
 
         h1 {
-            font-size: 40px;
-            line-height: 36px;
+            font-size: 4vw;
+            line-height: 3.8vw;
+        }
+
+        .tl-employer--big-image {
+            max-height: 650px;
+        }
+
+
+
+        .tl-employer-banner-box {
+            padding: 6vw 0;
+        }
+
+        @media(max-width: 767px) {
+            padding: 0;
+
+            h1 {
+                font-size: 40px;
+                line-height: 36px;
+            }
         }
     }
-}
 
-.tl-employer-contents {
-    border-top: 3px solid white;
-    margin: 50px 0;
-}
+    .tl-employer-contents {
+        border-top: 3px solid white;
+        margin: 50px 0;
+    }
