@@ -1,0 +1,141 @@
+{% extends "../layoutemployer.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+
+{% block body_id %}tl-employer-home{% endblock %}
+{% block content %}
+<section id="tl-employer-home--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-employer-banner-box">
+                    <h1>MEET THE WORKFORCE <br />OF THE FUTURE</h1>
+                    <p class="tl-lede">
+                        T Levels are a new two-year qualification for 16 to 19 year olds. Designed with employers, each T Level is equivalent to 3 A Levels and will give young people the skills, knowledge and attitude to thrive in the workplace.
+                        <br /><br />
+                        At the heart of each course, a 45-day industry placement will give you early access to the brightest talent entering your market.
+                    </p>
+
+                    <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer/about">Find out more about T Levels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 order-2 my-auto">
+                <img class="tl-employer--big-image" src="{{ asset_path }}images/employer/hpimage5.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 order-1 order-md-12 my-auto">
+                <div class="tl-employer-box">
+                    <h2>INDUSTRY PLACEMENTS ARE HAPPENING NOW</h2>
+                    <p>
+                        To prepare for T Levels, employers across England are partnering with local colleges and schools to trial industry placements.
+                    </p>
+                    <p>
+                        You can join this vocational revolution right now. Students are ready to start placements in areas such as:
+                    </p>
+                    <ul class="tl-list tl-list-bullet">
+                        <li>construction</li>
+                        <li>digital</li>
+                        <li>education and childcare</li>
+                        <li>health and science</li>
+                    </ul>
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/skills-available">Check all available skills</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes-black">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-6 my-auto">
+                <h2 class="tl-margin-bottom-30">
+                    BUSINESS BENEFITS <br>OF INDUSTRY PLACEMENTS
+                </h2>
+                <p>
+                    Industry placements help your organisation:
+                </p>
+
+                <ul class="tl-list tl-list-bullet">
+                    <li>spot and nurture young talent</li>
+                    <li>develop an effective recruitment pipeline</li>
+                    <li>access new ideas and cutting-edge skills</li>
+                </ul>
+
+                <p><a class="tl-button-employer tl-margin-top-30 tl-button-employer--purple" href="/{{ protoversion }}/employer/business-benefits">View all the business benefits</a></p>
+
+            </div>
+            <div class="col-md-6">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/employer/businessbenefits6.jpg" alt="" />
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 order-2 my-auto">
+                <div class="tl-employer-box tl-employer-box--left">
+                    <h2>THE BOTTOM LINE</h2>
+                    <p>Industry placements are an effective way to bring new talent into your organisation. You’ll be supported throughout the process by the college or school, which helps to reduce the time and effort required to manage a placement student.</p>
+
+                    <a class="tl-button-employer tl-margin-top-30" href="/{{ protoversion }}/employer/the-costs"><span class="d-inline-block d-md-none">What it costs</span><span class="d-none d-md-inline-block">What an industry placement costs</span></a>
+                </div>
+            </div>
+
+            <div class="col-md-6 order-1 order-md-12 my-auto">
+                <img class="tl-employer--big-image tl-employer--big-image--left" src="{{ asset_path }}images/employer/whatitcosts.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tl-banner-employer">
+    <div class="tl-container">
+        <div class="row no-gutters">
+
+                <div class="col-lg-8">
+                    <h2 class="tl-margin-top-60">What employers say about industry placements</h2>
+                </div>
+
+                <div class="col-12 tl-banner--video">
+                    <div class="tl-banner--video-image plyr__video-embed" id="player">
+                        <iframe src="https://www.youtube.com/embed/fWLUtLBc1rY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1"
+                                allowfullscreen
+                                allowtransparency></iframe>
+                    </div>
+                </div>
+                <div class="col-12 tl-margin-bottom-30">
+                    <p><a class="tl-link" style="color: #fff" href="#">Read a transcript of this video</a></p>
+                </div>
+        </div>
+        </div>
+</section>
+    {% include protoversion + "/includes/employerCTA.html" %}
+
+
+{% endblock %}
+{% block scripts %}
+{% include protoversion + "/includes/scripts.html" %}
+
+<script>
+    setTimeout(() => {
+        player.poster = 'https://i.imgur.com/R0vwNZt.jpg';
+    }, 500)
+</script>
+{% endblock %}

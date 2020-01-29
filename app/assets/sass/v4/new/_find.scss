@@ -1,0 +1,291 @@
+#tl-employer-find {
+    background-color: $orange;
+    padding: 35px 20px;
+    color: white;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .tl-employer-search--form {
+        padding: 20px 0;
+    }
+}
+
+#tl-employer-results {
+    padding: 50px 20px;
+
+    .tl-employer-results--summary {
+        color: #787878;
+        font-size: 18px;
+
+
+        span {
+            font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: black;
+        }
+    }
+
+    .tl-employer-result--item {
+        padding: 40px 15px;
+        border-bottom: 1px solid #d8d8d8;
+        overflow: auto;
+
+
+        &:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+
+        h3 {
+            font-size: 26px;
+            display: inline-block;
+        }
+
+        .tl-employer-result--distance {
+            font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+            color: $orange;
+            font-size: 16px;
+            line-height: 26px;
+            vertical-align: baseline;
+            font-weight: bold;
+            display: inline-block;
+            float: right;
+
+            @media (max-width: 700px) {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .tl-employer-results--address {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+
+        .tl-employer-results--travel {
+            font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .tl-employer-result--routes {
+            list-style: none;
+            font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 20px 0;
+            margin: 15px 0 0 0;
+            -moz-column-count: 2;
+            -moz-column-gap: 10px;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 10px;
+            column-count: 2;
+            column-gap: 10px;
+
+            @media (max-width: 600px) {
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
+
+
+            li {
+                padding: 5px 0;
+
+                span {
+                    color: $orange;
+                    font-size: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    display: block;
+                    margin-left: 30px;
+                    padding-right: 15px;
+                }
+            }
+
+            i {
+                color: $orange;
+                margin-right: 10px;
+                display: block;
+                float: left;
+                top: 3px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.tl-employer-result--button {
+    background-color: $orange;
+    color: white;
+    text-align: center;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    padding: 15px 25px;
+
+    &:hover {
+        background-color: darken($orange, 10%);
+        text-decoration: underline;
+
+        i {
+            text-decoration: none;
+        }
+    }
+
+    i {
+        margin-left: 10px;
+        display: inline-block;
+    }
+}
+
+.tl-employer-result--showmore {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    padding: 15px 25px;
+    margin-top: 30px;
+
+    &:hover {
+        text-decoration: underline;
+
+        i {
+            text-decoration: none;
+        }
+    }
+
+    i {
+        margin-left: 10px;
+    }
+}
+
+
+.tl-employer-filter--box {
+    border-bottom: 1px solid #d8d8d8;
+    overflow: auto;
+    padding: 15px 0 30px 0;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.tl-employer-filter--checkbox--wrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+.tl-employer-filter--checkbox {
+    font-size: 1px;
+    float: left;
+    margin-right: 10px;
+
+
+        &:hover {
+        cursor: pointer;
+
+        &:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: darken(#e7e7e7, 10%);
+        }
+    }
+
+    &:checked {
+        &:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00c";
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        &:hover {
+            &:before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f00c";
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                color: $orange;
+            }
+        }
+    }
+
+    &:before {
+        content: "";
+        padding: 5px;
+        background-color: #e7e7e7;
+        color: $orange;
+        line-height: 14px;
+        border: 1px solid #d8d8d8;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        display: inline-block;
+    }
+}
+
+.tl-employer-filter--checkbox--label {
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: 8px;
+    margin-bottom: 15px;
+    display: block;
+    float: left;
+    max-width: calc(100% - 50px);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        font-family: 'Atlas Typewriter Web', 'Times New Roman', Arial;
+        font-weight: normal;
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+
+.tl-employer-line {
+    border-top: 1px solid #d8d8d8;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#tl-employer-map {
+    background-image: image("employer/map1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
