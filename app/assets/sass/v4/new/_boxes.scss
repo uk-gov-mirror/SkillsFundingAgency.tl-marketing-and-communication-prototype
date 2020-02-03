@@ -2,11 +2,11 @@
     padding: 10px 0;
 
     &-right {
-        padding-left: 40px;
+        padding-left: 55px;
     }
 
     &-left {
-        padding-right: 40px;
+        padding-right: 55px;
     }
 
     @media (max-width:767px) {
@@ -16,6 +16,7 @@
 
 .tl-box--employer--image {
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
@@ -78,7 +79,7 @@
     background-color: black;
     color: white;
     font-size: 14px;
-    padding: 6vw 20px;
+    padding: 5vw 20px;
 
     .tl-employer-box {
         padding: 2vw 0;
@@ -101,7 +102,7 @@
     background-color: white;
     color: black;
     font-size: 14px;
-    padding: 6vw 20px;
+    padding: 5vw 20px;
 
 }
 
@@ -109,7 +110,7 @@
     background-color: $purple;
     color: white;
     font-size: 14px;
-    padding: 6vw 20px;
+    padding: 5vw 20px;
 
 }
 
@@ -139,7 +140,6 @@
         font-size: 20px;
         line-height: 20px;
         margin-top: 30px;
-        min-height: 40px;
 
         span {
             color: $purple;
@@ -154,7 +154,38 @@
     }
 
     p, ul {
-        margin-left: 20px;
+        margin-left: 0;
+    }
+
+    &--purple {
+        h3 {
+            span {
+                color: black;
+            }
+        }
+    }
+}
+
+.tl-employer-skills {
+    h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 40px;
+
+        span {
+            color: $purple;
+            display: inline-block;
+            float: left;
+            font-size: 26px;
+            min-height: 40px;
+            top: 0;
+            position: relative;
+            margin-right: 10px;
+        }
+    }
+
+    p, ul {
+        margin-left: 30px;
     }
 
     &--purple {

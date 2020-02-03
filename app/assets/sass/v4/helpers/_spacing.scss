@@ -13,6 +13,10 @@
     .tl-margin-top-#{$width} {
         margin-top: $width + px;
     }
+
+    .tl-margin-left-#{$width} {
+        margin-left: $width + px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -42,4 +46,3 @@
         }
     }
 }
-
