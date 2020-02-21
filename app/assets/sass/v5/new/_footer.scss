@@ -74,6 +74,20 @@
     }
 }
 
+.tl-employer-white-link {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $black;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid white;
+        }
+    }
+
+
 .tl-footer--social--student {
     text-align: right;
 
