@@ -119,7 +119,7 @@
     background-color: $salmon;
     color: black;
     font-size: 14px;
-    padding: 2.5vw 20px;
+    padding: 3vw 20px;
 
 }
 
@@ -206,11 +206,39 @@
     font-weight: 400;
 }
 
+.tl-employer--outline {
+    font-family: 'LL Circular Black Italic Web', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 
 .tl-employer--involved {
     h2 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.tl-employer--CTAnumber {
+    font-size: 40px;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 1em;
+}
+
+.tl-employer--CTAemail {
+    font-size: 25px;
+    font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .tl-addarrow--white {

@@ -110,6 +110,16 @@
     }
 }
 
+#tl-employer-costs {
+    #tl-nav--bar-employer-costs {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
 #tl-employer-involved {
     #tl-nav--bar-employer-involved {
         border-bottom: 2px solid $purple;
@@ -119,10 +129,3 @@
         }
     }
 }
-
-
-
-
-
-
-
