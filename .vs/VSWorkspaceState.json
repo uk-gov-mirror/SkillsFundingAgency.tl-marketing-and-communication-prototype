@@ -5,14 +5,12 @@
     "\\app\\assets",
     "\\app\\assets\\sass",
     "\\app\\assets\\sass\\v3",
-    "\\app\\assets\\sass\\v3\\helpers",
+    "\\app\\assets\\sass\\v3\\new",
     "\\app\\assets\\v3",
-    "\\app\\assets\\v3\\images",
-    "\\app\\assets\\v3\\images\\employer",
     "\\app\\views",
     "\\app\\views\\v3",
     "\\app\\views\\v3\\employer"
   ],
-  "SelectedNode": "\\app\\assets\\sass\\v3\\components\\_footer.scss",
+  "SelectedNode": "\\app\\views\\v3\\employer\\index.html",
   "PreviewInSolutionExplorer": false
 }
