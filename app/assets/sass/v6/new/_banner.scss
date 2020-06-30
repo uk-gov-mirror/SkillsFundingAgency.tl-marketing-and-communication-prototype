@@ -53,6 +53,38 @@
     }
 }
 
+#tl-student-home--banner {
+    background-image: image("StudentHomeBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+
+    * {
+        color: white;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 52px;
+
+
+        @media (max-width: 767px) {
+            font-size: 40px;
+            line-height: 36px;
+        }
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    .tl-employer-banner-box {
+        padding: 6vw 0;
+    }
+}
+
 #tl-employer-about--banner {
     background-color: $purple;
     color: white;
