@@ -1,0 +1,43 @@
+{% extends "v6/landing.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+{% block content %}
+    <section id="tl-landing">
+        <div class="tl-container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="tl-landing-logo"><a href="{{ protoversion }}" id="tl-nav--bar-logo"><span class="hidden">T Levels - The next level qualification</span></a></h1>
+                </div>
+            </div>
+        </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 tl-landing-box tl-landing-box--big tl-landing-left">
+                    <div class="">
+
+                        <div class="tl-landing-box--content">
+
+                            <h1>A headstart to your career</h1>
+                            <p class="tl-lede">Coming in September 2020, T Levels are a new qualification you can do after GCSEs. They combine classroom learning with an industry placement to help you build the future you want.</p>
+                            <a class="tl-button-employer" href="/{{ protoversion }}/student">I'm a student</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tl-landing-box tl-landing-box--big tl-landing-box--right tl-landing-right">
+                    <div class="">
+                        <div class="tl-landing-box--content">
+                            <h1>Your future workforce</h1>
+                            <p class="tl-lede">
+                                Employers have helped design T Levels so that students get the knowledge and skills that business needs. Each student does a 45-day industry placement, which helps you spot and develop new talent.
+                            </p>
+                            <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer">I'm an employer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+
+
+
+{% endblock %}
