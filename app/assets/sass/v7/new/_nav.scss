@@ -56,6 +56,14 @@
     }
 }
 
+.tl-nav--bar-student {
+
+    li a:hover {
+        border-bottom: 2px solid $orange;
+        text-decoration: none;
+    }
+}
+
 .tl-nav--employer {
     position: relative;
     display: block !important;
@@ -123,6 +131,58 @@
 #tl-employer-involved {
     #tl-nav--bar-employer-involved {
         border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+/* Student Active states*/
+#tl-student-home {
+    #tl-nav--bar-home {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+
+#tl-student-about {
+    #tl-nav--bar-about {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-why {
+    #tl-nav--bar-why {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-subjects {
+    #tl-nav--bar-subjects {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-find {
+    #tl-nav--bar-find {
+        border-bottom: 2px solid $orange;
 
         @media(max-width: 992px) {
             border-bottom: none;
