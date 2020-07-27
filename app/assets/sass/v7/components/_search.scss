@@ -136,7 +136,7 @@
 
     .tl-results-box {
         background-color: white;
-        padding: 25px 20px 40px 20px;
+        padding: 40px;
         margin: 20px 0;
         float: left;
         width: 100%;
@@ -148,6 +148,7 @@
 
         h3 {
             font-size: 24px;
+            padding-bottom: 15px;
         }
 
         .tl-results-box--subheader {
@@ -155,7 +156,17 @@
         }
 
         .tl-results-box--listheader {
-            margin: 10px 0 0 0;
+            margin: 0 0 5px 0;
+            padding-top: 10px;
+
+        }
+
+        .tl-line-lightgrey--small {
+            margin: 10px 0;
+            border-bottom: 1px solid #e6e6e6;
+            border-top: none;
+            border-right: none;
+            border-left: none;
         }
 
         .tl-results-box--distance {
@@ -169,6 +180,7 @@
             right: -20px;
             padding: 10px 20px;
             color: white;
+            text-transform: lowercase;
         }
 
         .tl-results-box--header {
