@@ -1,0 +1,58 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+
+Healthcare Science | T Levels
+
+{% endblock %}
+
+{% block body_id %}tl-subjects{% endblock %}
+
+
+{% block content %}
+  <main id="main" tabindex="-1">
+
+
+    <section id="tl-student-subject--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-subject-banner-box">
+                  <a class="tl-link-white--orange" href="/{{ protoversion }}/student/subjects">&lt; Back to all subjects</a>
+                  <h1 style="margin-top: 60px">Healthcare Science</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes-white">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8">
+              <h3 style="margin-bottom: 30px">Course overview</h3>
+
+              <p>Your course starts with the essential knowledge and skills to work in healthcare or science including how the industry works, core scientific concepts and key regulations including managing information, health and safety and good scientific/clinical practice.</p>
+
+              <p>You will then have the chance to specialise in at least one of the following areas:</p>
+
+              <ul class="tl-list tl-list-bullet">
+                <li>assisting with healthcare science</li>
+                <li>dental services (making dental devices)</li>
+                <li>optical care services</li>
+                <li>pharmacy services</li>
+                <li>prosthetic and orthotic technical services</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include protoversion + "/includes/searchRed.html" %}
+
+
+
+
+    </main>
+    {% endblock %}

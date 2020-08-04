@@ -1,0 +1,191 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+  Find a T Level
+{% endblock %}
+
+{% block body_id %}tl-find{% endblock %}
+
+
+{% block content %}
+<section id="tl-search">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="tl-search--content" style="margin: 20px 0 20px 0">
+                    <h2 style="padding-bottom: 15px">Find your nearest T Level</h2>
+                    <p>Search for colleges and schools delivering T Levels in 2020, 2021 and 2022</p>
+                    <form class="tl-search--form">
+                        <label for="Postcode" class="hidden">Postcode</label>
+                        <input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
+                        <label for="tl-qualifications" class="hidden">Select a qualification</label>
+                        <input type="hidden" asp-for="Qualification" />
+                        <input type="hidden" asp-for="ShouldSearch" />
+                        <input id="MaxResultCount" value="5" type="hidden" />
+                        <select class="tl-input tl-input--select" id="tl-qualifications">
+                            <option value="0">All T Level courses</option>
+                            <option value="1">Building services engineering</option>
+                            <option value="2">Design, surveying and planning (construction)</option>
+                            <option value="3">Digital business services</option>
+                            <option value="4">Digital production, design and development</option>
+                            <option value="5">Digital support and services</option>
+                            <option value="6">Education</option>
+                            <option value="7">Health</option>
+                            <option value="8">Healthcare science</option>
+                            <option value="9">Onsite construction</option>
+                            <option value="10">Science</option>
+                        </select>
+                        <a href="#" id="tl-find-button--search"class="tl-button tl-button--orange">Search</a>
+
+                        <br />
+                        <span class="tl-validation--message field-validation-error">You must enter a real postcode</span>
+
+                    </form>
+
+                    <!-- <p><a class="tl-link--white tl-link--new tl-link--new--white" href="#">View all T Level providers on a map</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="tl-results">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div id="tl-search-results" class="col-md-8">
+
+
+                <div class="tl-results-box">
+                    <h3>
+                        <span class="tl-results-box--distance">28 miles </span>Strode College
+                    </h3>
+                      <p class="tl-results-box--subheader">
+                          Street  |  BA16 0AB
+                      </p>
+                    <hr class="tl-line-lightgrey--small">
+                      <p class="tl-results-box--listheader"><strong>Starting in September 2020</strong></p>
+                      <ul class="tl-list tl-list-small tl-list-bullet">
+                          <li>Education</li>
+                      </ul>
+                      <p class="tl-results-box--listheader"><strong>Starting in September 2021</strong></p>
+                      <ul class="tl-list tl-list-small tl-list-bullet">
+                          <li>Health</li>
+                          <li>Healthcare science</li>
+                          <li>Science</li>
+                          <li style="display: none">All T Level courses</li>
+                      </ul>
+                    <p><a href="https://www.strode-college.ac.uk/courses/whats-right-for-you/t-levels/strode-among-first-to-teach-new/" class="tl-link tl-link--new"  id="tl-find--providersite">Visit their website</a></p>
+                </div>
+
+                <div class="tl-results-box">
+                    <h3><span class="tl-results-box--distance">40 miles </span>Cirencester College</h3>
+                      <p class="tl-results-box--subheader">
+                          Gloucester | GL7 1XA
+                      </p>
+                    <hr class="tl-line-lightgrey--small">
+
+                      <!-- <p class="tl-results-box--listheader"><strong>Starting in September 2020</strong></p>
+                      <ul class="tl-list tl-list-small tl-list-bullet">
+                          <li>Design, surveying and planning (construction)</li>
+                          <li>Digital production, design and development</li>
+                          <li>Education</li>
+                      </ul> -->
+
+                      <p class="tl-results-box--listheader"><strong>Offering T Levels from September 2022</strong></p>
+                      <ul class="tl-list tl-list-small tl-list-bullet">
+                          <!-- <li>Building services engineering</li>
+                          <li>Digital business services</li>
+                          <li>Digital support and services</li>
+                          <li>Health</li>
+                          <li>Healthcare science</li>
+                          <li>Science</li> -->
+                          <li style="display: none">All T Level courses</li>
+                      </ul>
+                      <p><a href="https://www.cirencester.ac.uk/courses/course-directory/t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+                </div>
+
+                <div class="tl-results-box">
+                    <h3><span class="tl-results-box--distance">50 miles </span>Bridgwater & Taunton College</h3>
+                        <p class="tl-results-box--subheader">
+                            Taunton | TA1 5AX
+                        </p>
+                    <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2020</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Design, surveying and planning (construction)</li>
+                            <li>Digital production, design and development</li>
+                            <li>Education</li>
+                        </ul>
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2021</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Building services engineering</li>
+                            <li>Digital business services</li>
+                            <li>Health</li>
+                            <li style="display: none">All T Level courses</li>
+
+                        </ul>
+                        <p><a href="https://www.btc.ac.uk/find-a-course/school-leavers/t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+                </div>
+
+                <div class="tl-results-box">
+                    <h3><span class="tl-results-box--distance">77 miles </span>Exeter College</h3>
+                        <p class="tl-results-box--subheader">
+                            Exeter | EX2 7LB
+                        </p>
+                    <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2020</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Design, surveying and planning (construction)</li>
+                        </ul>
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2021</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Building services engineering</li>
+                            <li>Onsite construction</li>
+                            <li style="display: none">All T Level courses</li>
+
+                        </ul>
+                        <p><a href="https://exe-coll.ac.uk/school-leavers/t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+                </div>
+
+                <div class="tl-results-box">
+                    <h3><span class="tl-results-box--distance">79 miles </span>Exeter College</h3>
+                        <p class="tl-results-box--subheader">
+                            Exeter | EX4 3SR
+                        </p>
+                    <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2020</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Digital production, design and development</li>
+                        </ul>
+
+                        <p class="tl-results-box--listheader"><strong>Starting in September 2021</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li>Digital business services</li>
+                            <li>Digital support and services</li>
+                            <li>Health</li>
+                            <li>Healthcare science</li>
+                            <li>Science</li>
+                            <li style="display: none">All T Level courses</li>
+
+                        </ul>
+                        <p><a href="https://exe-coll.ac.uk/school-leavers/t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+                </div>
+
+
+                <p class="tl-next--container">
+                    <a href="#" id="tl-next" class="tl-button tl-button--arrow tl-tablet-hidden">Load next 5 providers</a>
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

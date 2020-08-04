@@ -1,0 +1,55 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+
+Onsite Construction | T Levels
+
+{% endblock %}
+
+{% block body_id %}tl-subjects{% endblock %}
+
+
+{% block content %}
+  <main id="main" tabindex="-1">
+
+
+    <section id="tl-student-subject--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-subject-banner-box">
+                  <a class="tl-link-white--orange" href="/{{ protoversion }}/student/subjects">&lt; Back to all subjects</a>
+                  <h1 style="margin-top: 60px">Onsite Construction</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes-white">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8">
+              <h3 style="margin-bottom: 30px">Course overview</h3>
+
+              <p>Your course starts by helping you get to grips with core knowledge of how the construction industry works, the principles of design and the role of technology and sustainability. You will then have the chance to specialise in at least one of these areas:</p>
+
+              <ul class="tl-list tl-list-bullet">
+                <li>bricklaying</li>
+                <li>carpentry and joinery</li>
+                <li>painting and decorating</li>
+                <li>plastering</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include protoversion + "/includes/searchRed.html" %}
+
+
+
+
+    </main>
+    {% endblock %}

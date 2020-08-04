@@ -1,0 +1,54 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+
+Education and Childcare | T Levels
+
+{% endblock %}
+
+{% block body_id %}tl-subjects{% endblock %}
+
+
+{% block content %}
+  <main id="main" tabindex="-1">
+
+
+    <section id="tl-student-subject--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-subject-banner-box">
+                  <a class="tl-link-white--orange" href="/{{ protoversion }}/student/subjects">&lt; Back to all subjects</a>
+                  <h1 style="margin-top: 60px">Education and Childcare</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tl-employer--boxes-white">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8">
+              <h3 style="margin-bottom: 30px">Course overview</h3>
+
+              <p>Everyone studies a core curriculum of child development, how education works plus important topics like safeguarding and special educational needs. You can then focus on one of these areas:</p>
+
+              <ul class="tl-list tl-list-bullet">
+                  <li>early years education and childcare (the industry placement for this specialism lasts a minimum of 750 hours, during which students are assessed in real work situations)</li>
+                  <li>assisting teaching</li>
+                  <li>supporting and mentoring students in further and higher education (only available from September 2021)</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include protoversion + "/includes/searchRed.html" %}
+
+
+
+
+    </main>
+    {% endblock %}

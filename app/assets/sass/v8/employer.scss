@@ -1,0 +1,14 @@
+@import "helpers/all";
+@import "new/all";
+
+body {
+    font-family: 'Atlas Typewriter Web', 'Times New Roman', Arial;
+    padding: 0;
+    margin: 0;
+}
+
+.tl-container {
+    max-width: 1240px;
+    padding: 0 20px;
+}
+
