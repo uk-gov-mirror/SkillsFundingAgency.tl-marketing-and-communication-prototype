@@ -48,5 +48,3 @@ $(document).on('click', function () {
         $("body").removeClass('modal-open');
     }
 });
-
-

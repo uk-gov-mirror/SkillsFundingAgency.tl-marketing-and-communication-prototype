@@ -33,6 +33,16 @@ body {
     }
 }
 
+.tl-link--careers {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: $orange;
+    }
+
+}
+
 .tl-list {
     margin-bottom: 0;
 }
