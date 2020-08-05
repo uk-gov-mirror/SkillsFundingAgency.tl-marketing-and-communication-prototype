@@ -12,3 +12,55 @@ body {
     padding: 0 20px;
 }
 
+// accordion
+.accordion {
+  background-color: #f3f2f1;
+  color: black;
+  cursor: pointer;
+  padding: 25px 20px 25px 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-family: 'LL Circular Black Italic Web', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+
+  &:hover {
+      // border: 2px solid $orange;
+      text-decoration: underline;
+      text-decoration-color: $orange;
+      padding-bottom: 10px;
+  }
+
+}
+
+.accordion:after {
+  content: '\002B';
+  color: $orange;
+  font-weight: bold;
+  font-size: 150% !important;
+  float: right;
+  margin: 0 5px 0 20px;
+  top: -10px;
+  }
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border-left: 5px solid #f3f2f1;
+  border-right: 5px solid #f3f2f1;
+  border-bottom: 5px solid #f3f2f1;
+
+}
