@@ -374,3 +374,25 @@
         }
     }
 }
+
+// Student
+
+.tl-subjects-summary {
+    margin: 0 0 0 20px;
+}
+
+.tl-subjects-summary--border {
+  border-left: 5px solid $orange;
+
+  h3 {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 5px 0 0 0;
+
+  }
+
+  p {
+      margin: 5px 0 5px 0;
+  }
+
+}

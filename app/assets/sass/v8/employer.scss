@@ -30,11 +30,19 @@ body {
 
 
   &:hover {
-      // border: 2px solid $orange;
       text-decoration: underline;
       text-decoration-color: $orange;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
+      background-color: darken(#f3f2f1, 3%);
   }
+
+  &:focus{
+    border: 2px solid $orange;
+    padding: 23px 18px 27px 18px;
+
+  }
+
+
 
 }
 
@@ -45,7 +53,6 @@ body {
   font-size: 150% !important;
   float: right;
   margin: 0 5px 0 20px;
-  top: -10px;
   }
 
 .active:after {
@@ -55,7 +62,7 @@ body {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 5px 15px 20px 15px;
   background-color: white;
   display: none;
   overflow: hidden;
