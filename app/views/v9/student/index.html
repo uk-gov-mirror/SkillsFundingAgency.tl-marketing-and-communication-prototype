@@ -1,0 +1,100 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+
+{% block body_id %}tl-student-home{% endblock %}
+
+
+{% block content %}
+
+<section id="tl-student-home--banner">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-8 my-auto">
+                <div class="tl-employer-banner-box">
+                    <h1 style="padding-bottom: 10px">WELCOME TO THE NEXT LEVEL</h1>
+                    <p class="tl-lede">
+                    T Levels are a brand-new, 2-year qualification that will give you a head start towards the career you want.
+                    <br><br>
+                    The government has developed T Levels to deliver world-class technical education and give you a new choice after GCSEs.
+                    </p>
+                    <a class="tl-button tl-button--orange" href="/{{ protoversion }}/student/about">Find out more about T Levels</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tl-boxes--employer tl-margin-top-40">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6 my-auto">
+                <div class="tl-box--employer tl-box--employer-left">
+                    <h2 style="padding-bottom: 15px">WHY CHOOSE T LEVELS</h2>
+                    <p>A T Level is a nationally-recognised qualification that is worth the same number of UCAS points as 3 A levels.</p>
+                    <p>Backed by business, they include a 45-day industry placement to help you learn what a real career is like.</p>
+                    <a class="tl-button tl-button--orange" style="margin-top:15px"  href="/{{ protoversion }}/student/why">Discover the benefits of T Levels</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/HomeRedesign1.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-md-6 order-2" style="margin-bottom: 1em">
+                <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/HomeRedesign2.jpg" alt="" />
+            </div>
+            <div class="col-md-6 my-auto order-1 order-md-12">
+                <div class="tl-box--employer tl-box--employer-right">
+                    <h2 style="padding-bottom: 15px">WHAT YOU CAN LEARN</h2>
+                    <p>24 T Level subjects will become available over the next 3 years, starting in September 2020 with courses in construction, digital and education.</p>
+                    <p>Eventually there will be something for everyone - from agriculture to catering and engineering to finance.</p>
+                    <a class="tl-button tl-button--orange" style="margin-top:15px" href="/{{ protoversion }}/student/subjects">See all T Level subjects</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="tl-search--alt">
+      <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="tl-search--content">
+                    <h2 style="padding-bottom: 15px">Find a <span class="no-break">T Level</span> near you</h2>
+                    <p>The first 3 T Levels start in September 2020 at selected colleges and schools across England.</p>
+                    <form class="tl-search--form" action="find">
+                        <label for="Postcode" class="hidden">Postcode</label><input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you">
+                        <a href="/{{ protoversion }}/student/find" id="tl-find-button" class="tl-button tl-button--black">Search</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tl-banner">
+        <div class="row no-gutters">
+            <div class="col tl-banner--video">
+                <div class="tl-banner--video-image plyr__video-embed" id="player">
+                    <iframe src="https://www.youtube.com/embed/XYQw5rQrwwA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen
+                            allowtransparency></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="tl-banner--nextlevel"><span class="hidden">Welcome to the next level</span></h2>
+            </div>
+        </div>
+
+</section>
+
+
+
+{% endblock %}
