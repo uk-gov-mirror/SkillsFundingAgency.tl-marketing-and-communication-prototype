@@ -131,17 +131,18 @@ body {
 
 
 .tl-button-employer-involved {
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 30px;
 }
 
 
 .tl-lede {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 27px;
 
     @media (max-width: 700px) {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 
