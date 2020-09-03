@@ -43,6 +43,7 @@
 }
 
 
+
 /*
  * Legal Disclaimer
  *
@@ -91,3 +92,37 @@
 }
 
 
+/* SORA TYPEFACE*/
+
+@font-face {
+    font-family: 'Sora Regular';
+    src: url("../fonts/Sora-Bold.eot");
+    src: url("../fonts/Sora-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Sora-Bold.woff2") format("woff2"), url("../fonts/Sora-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.Sora-Regular-Bold {
+    font-family: 'Sora Regular';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: 'Sora Regular';
+    src: url("../fonts/Sora-Regular.eot");
+    src: url("../fonts/Sora-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Sora-Regular.woff2") format("woff2"), url("../fonts/Sora-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.Sora-Regular {
+    font-family: 'Sora Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
