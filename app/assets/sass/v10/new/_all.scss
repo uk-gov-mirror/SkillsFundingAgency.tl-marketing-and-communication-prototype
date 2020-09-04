@@ -21,6 +21,7 @@ body {
 
     &:hover {
         border-bottom: 2px solid black;
+        @include rgba-background($orange, 0.25);
     }
 
     &--white {
