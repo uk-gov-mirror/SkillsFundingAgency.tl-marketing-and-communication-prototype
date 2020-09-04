@@ -1,0 +1,100 @@
+﻿{% block top_of_page %}{% endblock %}
+{% set protoversion = 'v10' %}
+
+{%- set asset_path = '/public/' + protoversion + '/' -%}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block pageTitle %}{% endblock %} - T Level</title>
+    <link rel="shortcut icon" href="{{ asset_path }}images/favicon.ico?0.24.1" type="image/x-icon" />
+    <meta name="theme-color" content="#0b0c0c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="T Levels">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset_path }}images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset_path }}images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset_path }}images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset_path }}images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset_path }}images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset_path }}images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset_path }}images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset_path }}images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset_path }}images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset_path }}images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset_path }}images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset_path }}images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset_path }}images/favicon-16x16.png">
+    <link rel="manifest" href="{{ asset_path }}images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset_path }}images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/public/stylesheets/fonts.css">
+    <link rel="stylesheet" href="/public/stylesheets/{{ protoversion }}.css">
+    <link rel="stylesheet" href="/public/stylesheets/fontawesome.css">
+
+
+    <meta property="og:image" content="{{ asset_path }}images/opengraph-image.png?0.24.1">
+</head>
+
+<body id="{% block body_id %}{% endblock %}" class="{% block body_classes %}{% endblock %}">
+    {% block body_start %}
+    {% endblock %}
+
+    {% block header %}
+    {% include protoversion + "/includes/header.html" %}
+    {% endblock %}
+
+
+    {% block nav %}
+    <nav id="tl-nav" class="tl-container tl-nav--employer">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="tl-nav--logo--employer" style="margin-bottom: 0px"><a href="/{{ protoversion }}" id="tl-nav--bar-logo"><span class="hidden">T Levels - The next level qualification</span></a></h1>
+
+                <a class="tl-nav--hamburger" id="tl-nav--hamburger" aria-expanded="false" href="#navigation"><i><span class="hidden">Main navigation</span></i></a>
+                <ul class="tl-nav--bar tl-nav--bar-employer">
+                    <li>
+                        <a id="tl-nav--bar-employer-home" href="/{{ protoversion }}/employer">Home</a>
+                    </li>
+                    <li>
+                        <a id="tl-nav--bar-employer-about" href="/{{ protoversion }}/employer/about">About T Levels</a>
+                    </li>
+                    <li>
+                        <a id="tl-nav--bar-employer-right" href="/{{ protoversion }}/employer/skills-available">Skills available</a>
+                    </li>
+                    <li>
+                        <a id="tl-nav--bar-employer-benefits" href="/{{ protoversion }}/employer/business-benefits">Business benefits</a>
+                    </li>
+                    <li>
+                        <a id="tl-nav--bar-employer-costs" href="/{{ protoversion }}/employer/the-costs">Costs</a>
+                    </li>
+                    <li>
+                        <a id="tl-nav--bar-employer-involved" href="/{{ protoversion }}/employer/get-involved">Next steps</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% include protoversion + "/includes/footernew.html" %}
+    {% endblock %}
+
+    {% block body_end %}
+    {% block scripts %}
+    {% include protoversion + "/includes/scripts.html" %}
+    {% endblock %}
+    {% endblock %}
+</body>
+</html>

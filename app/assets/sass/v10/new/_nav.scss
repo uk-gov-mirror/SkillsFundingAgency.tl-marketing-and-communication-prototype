@@ -1,0 +1,191 @@
+.tl-nav--logo--landing a {
+    padding: 10px 0;
+    float: left;
+    background: image("logomedium.svg") no-repeat left center;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.tl-nav--logo--employer a {
+    margin-top: 15px;
+    float: left;
+    background: image("logomedium.svg") no-repeat left center;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.tl-nav--employer-switch {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 25px;
+    text-align: right;
+    font-family: 'LL Circular Black Italic Web', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    .tl-nav--employer-switch--arrow:after {
+        background-image: image("employer/arroworange.svg");
+        content: "";
+        display: inline-block;
+        background-size: contain;
+        width: 17px;
+        top: 4px;
+        position: relative;
+        margin-left: 7px;
+        right: 0;
+        height: 16px;
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.tl-nav--bar-employer {
+
+    li a:hover {
+        border-bottom: 2px solid $purple;
+        text-decoration: none;
+    }
+}
+
+.tl-nav--bar-student {
+
+    li a:hover {
+        border-bottom: 2px solid $orange;
+        text-decoration: none;
+    }
+}
+
+.tl-nav--employer {
+    position: relative;
+    display: block !important;
+    overflow: visible !important;
+
+    .tl-nav--hamburger {
+        float: right;
+    }
+
+}
+
+
+/* Active states*/
+#tl-employer-home {
+    #tl-nav--bar-employer-home {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+
+#tl-employer-about {
+    #tl-nav--bar-employer-about {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-employer-right {
+    #tl-nav--bar-employer-right {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-employer-benefits {
+    #tl-nav--bar-employer-benefits {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-employer-costs {
+    #tl-nav--bar-employer-costs {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-employer-involved {
+    #tl-nav--bar-employer-involved {
+        border-bottom: 2px solid $purple;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+/* Student Active states*/
+#tl-student-home {
+    #tl-nav--bar-home {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+
+#tl-student-about {
+    #tl-nav--bar-about {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-why {
+    #tl-nav--bar-why {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-subjects {
+    #tl-nav--bar-subjects {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
+
+#tl-student-find {
+    #tl-nav--bar-find {
+        border-bottom: 2px solid $orange;
+
+        @media(max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+}
