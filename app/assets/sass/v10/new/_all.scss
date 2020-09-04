@@ -16,7 +16,7 @@ body {
 .tl-link--new {
     border-bottom: 2px solid $orange;
     text-decoration: none;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     color: black;
 
     &:hover {
@@ -35,10 +35,15 @@ body {
 
 .tl-link--careers {
     color: white;
+    border-bottom: 2px solid $orange;
     text-decoration: none;
+    padding-bottom: 0px;
+    line-height: 26px;
 
     &:hover {
-        color: $orange;
+        border-bottom: 2px solid $white;
+        @include rgba-background($orange, 0.25);
+
     }
 
 }
