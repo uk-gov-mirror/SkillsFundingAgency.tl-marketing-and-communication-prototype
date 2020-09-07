@@ -181,8 +181,15 @@
     padding-left: 20px;
 }
 
-.tl-text-big {
-    font-size: 20px;
+.tl-font-small {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    padding: 2px 0 !important;
+
+    @media (max-width: 700px) {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
 }
 
 .tl-margin-0 {

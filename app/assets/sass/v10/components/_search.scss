@@ -171,17 +171,18 @@
         }
 
         .tl-results-box--distance {
-            font-family: 'Atlas Typewriter Web', 'Times New Roman', Arial;
+            font-family: 'Sora Regular', Arial;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 16px;
             float: right;
             background-color: black;
             position: relative;
-            top: -25px;
+            top: -10px;
             right: -20px;
             padding: 10px 20px;
             color: white;
             text-transform: lowercase;
+            margin-left: 20px;
         }
 
         .tl-results-box--header {
