@@ -1,0 +1,79 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+  Business benefits
+{% endblock %}
+
+{% block body_id %}tl-industry{% endblock %}
+
+
+{% block content %}
+
+<section id="tl-why-content-1" class="tl-background--purple">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets6.jpg" alt="" />
+            </div>
+            <div class="col-md-6">
+                <div class="tl-box tl-box--purple">
+                    <h2 class="text-center">Business benefits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin est sed pretium elementum. Nulla rutrum sodales interdum. Phasellus cursus dolor eros, sollicitudin dictum orci vestibulum vitae. Fusce convallis, nisi et finibus tempus, est nisi dictum sapien, ut rhoncus sapien libero a augue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="tl-search">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="tl-search--content">
+                    <h2 class="text-center tl-desktop-only"><span class="text-outline--white">Find a <span class="no-break">T Level</span></span><br /><span class="text-purple"> near you</span></h2>
+                    <h2 class="text-center tl-tablet-down"><a href="/Find" class="tl-underline-none"><span class="text-outline--white">Find a </span><span class="text-purple tl-arrow--big">course near you</span></a></h2>
+                    <form class="tl-search--form text-center tl-desktop-only" action="find">
+                        <label for="Postcode" class="hidden">Postcode</label>
+                        <input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
+                        <button id="tl-find-button" type="submit" class="tl-button tl-button--orange" value="Search">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tl-why-content-2" class="tl-container">
+    <div class="row no-gutters">
+        <div class="col-md-6 order-2">
+            <div class="tl-box tl-box--white">
+                <h2 class="text-center">Good for business</h2>
+                <p>Sed pellentesque eget leo sit amet facilisis. Sed scelerisque placerat mi eget molestie.</p>
+                <ul class="tl-list">
+                    <li>- Sed vestibulum, felis vitae pretium condimentum, risus ligula posuere elit, eu blandit justo massa eu nunc.</li>
+                    <li>- Aliquam suscipit est non venenatis dictum. Fusce gravida lobortis varius.</li>
+                    <li>- Nam porttitor, turpis sed posuere venenatis, ex ligula aliquet tortor, sed tempor nisi urna et massa.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 order-1 order-md-12">
+            <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets7.jpg" alt="T Levels are backed by business" />
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <img class="tl-image--responsive" src="{{ asset_path }}images/TLevels_WebsiteAssets17.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+            <div class="tl-box tl-box--white">
+                <h2 class="text-center">Good for the community</h2>
+                <p>Donec ipsum risus, lacinia dictum mi ut, pretium porta ligula. Aliquam vel nibh rutrum, hendrerit urna in, pretium risus. Fusce nisl ipsum, fringilla a tincidunt mattis, maximus eget dui. In eu orci imperdiet, tincidunt urna vel, finibus mauris.</p>
+                <ul class="tl-list">
+                    <li>- Sed vestibulum, felis vitae pretium condimentum, risus ligula posuere elit, eu blandit justo massa eu nunc.</li>
+                    <li>- Aliquam suscipit est non venenatis dictum. Fusce gravida lobortis varius.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

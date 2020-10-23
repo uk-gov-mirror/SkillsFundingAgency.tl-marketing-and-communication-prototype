@@ -1,0 +1,78 @@
+{% extends "v11/landing.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+{% block content %}
+    <section id="tl-landing" class="tl-addarrow--white--internal">
+        <div class="tl-container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="tl-landing-logo"><a href="{{ protoversion }}" id="tl-nav--bar-logo"><span class="hidden">T Levels - The next level qualification</span></a></h1>
+                </div>
+            </div>
+        </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 tl-landing-box tl-landing-left">
+                        <div class="tl-landing-box--content">
+                            <h1>THE NEXT LEVEL QUALIFICATION</h1>
+                            <p class="tl-lede">T Levels are a new qualification after GCSE that will take your future to the next level.</p>
+                            <a class="tl-button-employer" href="/{{ protoversion }}/student">I'm a student</a>
+                        </div>
+                </div>
+                <div class="col-lg-6 tl-landing-box tl-landing-box--right tl-landing-right">
+                    <div class="">
+                        <div class="tl-landing-box--content">
+                            <h1>YOUR FUTURE WORKFORCE</h1>
+                            <p class="tl-lede">T Levels include a 45-day industry placement that can help you find and develop new talent.</p>
+                            <a class="tl-button-employer tl-button-employer--purple" href="/{{ protoversion }}/employer">I'm an employer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+
+    <section class="tl-boxes--employer tl-margin-top-40">
+        <div class="tl-container">
+            <div class="row no-gutters">
+                <div class="col-md-6 my-auto">
+                    <div class="tl-box--employer tl-box--employer-left">
+                        <h2 class="tl-margin-bottom-30">80% CLASSROOM, <br/>20% WORK</h2>
+                        <p>T Level students spend 80% of the course in the classroom, learning the skills that employers need. The other 20% is a meaningful industry placement, where they put these skills into action.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/employer/TLevels_WebsiteAssets23.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-6 order-2">
+                    <img class="tl-image--responsive tl-box--employer--image" src="{{ asset_path }}images/employer/hpimage1.jpg" alt="" />
+                </div>
+                <div class="col-md-6 my-auto order-1 order-md-12">
+                    <div class="tl-box--employer tl-box--employer-right">
+                        <h2 class="tl-margin-bottom-30">EQUIVALENT TO <span class="no-break">3 A LEVELS</span></h2>
+                        <p>T Levels are an alternative to A levels, apprenticeships and other 16 to 19 courses. Equivalent to 3 A levels, a T Level focuses on vocational skills and can help students into skilled employment, higher study or apprenticeships.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-6 my-auto">
+                    <div class="tl-box--employer tl-box--employer-left">
+                        <h2 class="tl-margin-bottom-30">A 45-DAY INDUSTRY PLACEMENT</h2>
+                        <p>Each T Level includes an in-depth industry placement that lasts at least 45 days. Students get valuable experience in the workplace; employers get early sight of the new talent in their industry. </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <img class="tl-image--responsive tl-box--employer--image" style="margin-bottom: 60px" src="{{ asset_path }}images/employer/hpimage3.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

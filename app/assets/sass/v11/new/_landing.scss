@@ -1,0 +1,156 @@
+#tl-landing {
+    position: relative;
+    z-index: unset;
+
+
+    * {
+        color: white;
+        z-index: unset;
+    }
+
+    h1 {
+        font-size: 5vw;
+        line-height: 4.8vw;
+
+        @media (min-width: 1150px) {
+            font-size: 58px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 40px;
+            line-height: 35px;
+        }
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    .tl-landing-box {
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        overflow: auto;
+
+        @media (max-width: 992px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+
+        .tl-landing-box--content {
+            max-width: 600px;
+            float: left;
+            padding: 0;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 20px;
+
+            }
+        }
+    }
+
+
+    .tl-landing-left {
+        background-image: image("employer/hpbanner2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        background-repeat: no-repeat;
+
+        @media (max-width: 992px) {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        .tl-landing-box--content {
+            float: right;
+            padding-right: 60px;
+
+            @media (max-width: 992px) {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .tl-landing-right {
+        background-image: image("employer/hpbanner1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        background-repeat: no-repeat;
+        text-align: right;
+
+        .tl-landing-box--content {
+            padding-left: 60px;
+
+            @media (max-width: 992px) {
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+
+
+
+
+    .tl-landing-box--big {
+        padding: 30vh 20px 30vh 50px;
+
+        &:first-child {
+            padding: 30vh 50px 30vh 20px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 4vh 20px 4vh 20px !important;
+
+            &:first-child {
+                padding: 100px 20px 4vh 20px !important;
+            }
+        }
+
+        .tl-landing-box--content {
+            max-width: 550px;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+.tl-landing-logo {
+    position: absolute;
+    top: 20px;
+    z-index: 999 !important;
+
+    @media (max-width: 767px) {
+        margin-left: 20px;
+    }
+
+    a {
+        padding: 10px 0;
+        float: left;
+        background: image("logomediumwhite.svg") no-repeat left center;
+        min-width: 200px;
+        min-height: 40px;
+    }
+}
+
+
+    .tl-landing-logo--new {
+
+        a {
+            background: image("logowhite.svg") no-repeat left center;
+            min-width: 240px;
+            min-height: 50px;
+        }
+    }
