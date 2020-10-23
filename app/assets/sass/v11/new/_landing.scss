@@ -28,27 +28,14 @@
     }
 
     .tl-landing-box {
-        padding-top: 24vw;
-        padding-bottom: 3vw;
+        padding-top: 360px;
+        padding-bottom: 50px;
         overflow: auto;
+        max-height: 700px;
 
         @media (max-width: 992px) {
             padding-top: 40px;
             padding-bottom: 40px;
-        }
-
-
-        .tl-landing-box--content {
-            max-width: 600px;
-            float: left;
-            padding: 0;
-
-            @media (max-width: 992px) {
-                width: 100%;
-                max-width: 100%;
-                padding: 0 20px;
-
-            }
         }
     }
 
@@ -59,22 +46,29 @@
         background-size: cover;
         background-color: white;
         background-repeat: no-repeat;
-        padding-left: 2.5vw;
-
+        padding-left: 35px;
+        padding-right: 60px;
 
         @media (max-width: 992px) {
-            padding-top: 80px;
-            padding-bottom: 40px;
-        }
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("StudentLanding.jpg");
+            background-position: top;
+            background-size: cover;
+            background-color: white;
+            background-repeat: no-repeat;
+            padding: 70px 20px 30px 20px;
 
-        .tl-landing-box--content {
-            float: right;
-            padding-right: 60px;
-
-            @media (max-width: 992px) {
-                padding-right: 20px;
+            h1 {
+                margin-bottom: 0;
             }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 0;
+            }
+
         }
+
     }
 
     .tl-landing-right {
@@ -83,16 +77,30 @@
         background-size: cover;
         background-color: white;
         background-repeat: no-repeat;
-        padding-right: 2.5vw;
+        padding-right: 35px;
+        padding-left: 60px;
         text-align: right;
 
-        .tl-landing-box--content {
-            padding-left: 60px;
+        @media (max-width: 992px) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("EmployerLanding.jpg");
+            background-position: top;
+            background-size: cover;
+            background-color: white;
+            background-repeat: no-repeat;
+            padding: 70px 20px 30px 20px;
 
-            @media (max-width: 992px) {
-                padding-left: 20px;
+            h1 {
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 0;
             }
         }
+
+
     }
 
 
