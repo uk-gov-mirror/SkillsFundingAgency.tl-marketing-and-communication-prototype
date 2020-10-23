@@ -135,6 +135,20 @@ body {
     }
 }
 
+.tl-button-employer--orange {
+    background-color: $orange;
+    color: black !important;
+
+
+    &:before {
+        border: 2px solid $orange;
+    }
+
+    &:after {
+        background-image: image("employer/arrowblack.svg");
+    }
+}
+
 
 .tl-button-employer-involved {
     font-size: 18px;

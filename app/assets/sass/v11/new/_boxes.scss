@@ -288,14 +288,14 @@
     &:after {
         content: "";
         background: image("arrowwhite.svg");
-        background-size: 200px;
+        background-size: 235px;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 50%;
-        margin-left: -100px;
+        margin-left: -117px;
         display: block;
-        height: 170px;
-        width: 200px;
+        height: 200px;
+        width: 235px;
         background-position: bottom;
 
         @media (max-width: 992px) {
