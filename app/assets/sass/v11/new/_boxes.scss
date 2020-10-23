@@ -420,3 +420,52 @@
     padding: 0 15px 0 15px;
 
 }
+
+.tl-landing-grid {
+    h3 {
+        font-size: 30px;
+
+        span {
+            color: $purple;
+            display: inline-block;
+            float: left;
+            font-size: 26px;
+            min-height: 40px;
+            top: 0;
+            position: relative;
+            margin-right: 0px;
+        }
+
+    }
+
+    p, ul {
+        margin-left: 0;
+    }
+
+}
+
+.tl-landing-arrow {
+    min-height: 50px;
+    min-width: 55px;
+    max-height: 30px;
+    width: auto;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+
+.tl-landing-grid-left {
+    padding: 0 2vw 0 3.5vw;
+
+}
+
+.tl-landing-grid-right {
+    padding: 0 3.5vw 0 2vw;
+
+}
+
+.tl-landing-grid-mid {
+    padding: 0 2vw 0 2vw;
+
+}
