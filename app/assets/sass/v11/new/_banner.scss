@@ -22,35 +22,46 @@
 
 
 #tl-employer-home--banner {
-    background-image: image("employer/hpbanner1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: black;
-    background-repeat: no-repeat;
-    padding: 0 20px;
+  background-color: $purple;
+  color: white;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  overflow: hidden;
 
-    * {
-        color: white;
-    }
+  * {
+      color: white;
+  }
 
-    h1 {
-        font-size: 60px;
-        line-height: 52px;
+  h1 {
+      font-size: 55px;
+      line-height: 55px;
+  }
+
+  p {
+      padding: 20px 0;
+  }
+
+  .tl-employer-box {
+      padding: 2vw 20px;
+
+      @media (max-width: 767px) {
+          padding: 40px 20px !important;
+      }
+  }
+
+  .tl-employer-banner-box {
+      padding: 6vw 0;
+  }
+
+  @media (max-width: 767px) {
+      padding: 0;
 
 
-        @media (max-width: 767px) {
-            font-size: 40px;
-            line-height: 36px;
-        }
-    }
-
-    p {
-        padding: 20px 0;
-    }
-
-    .tl-employer-banner-box {
-        padding: 6vw 0;
-    }
+      h1 {
+          font-size: 40px;
+          line-height: 36px;
+      }
+  }
 }
 
 #tl-student-home--banner {

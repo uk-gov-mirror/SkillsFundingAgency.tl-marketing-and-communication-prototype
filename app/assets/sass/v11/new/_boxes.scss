@@ -2,11 +2,11 @@
     padding: 10px 0;
 
     &-right {
-        padding-left: 55px;
+        padding-left: 40px;
     }
 
     &-left {
-        padding-right: 55px;
+        padding-right: 40px;
     }
 
     @media (max-width:767px) {
@@ -19,6 +19,17 @@
     margin-top: 30px;
 }
 
+.tl-box--employer--imageleft {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-right: 40px;
+}
+
+.tl-box--employer--imageright {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 40px;
+}
 
 /* EMPLOYER PAGE */
 
@@ -55,6 +66,14 @@
 
     @media (max-width:767px) {
         padding: 20px !important;
+    }
+}
+
+.tl-employerhome-box {
+    padding: 5vw 0px 5vw 0px;
+
+    @media (max-width:767px) {
+        padding: 50px 20px 0px 20px !important;
     }
 }
 
@@ -102,7 +121,7 @@
     background-color: white;
     color: black;
     font-size: 18px;
-    padding: 4vw 20px;
+    padding: 5vw 20px;
 
 }
 
