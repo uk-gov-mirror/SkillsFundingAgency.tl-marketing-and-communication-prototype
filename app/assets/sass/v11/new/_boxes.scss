@@ -3,10 +3,18 @@
 
     &-right {
         padding-left: 40px;
+
+        @media (max-width:992px) {
+            padding-left: 0px;;
+        }
     }
 
     &-left {
         padding-right: 40px;
+
+        @media (max-width:992px) {
+            padding-right: 0px;;
+        }
     }
 
     @media (max-width:767px) {
@@ -15,19 +23,19 @@
 }
 
 .tl-box--employer--image {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 .tl-box--employer--imageleft {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-top: 35px;
     padding-right: 40px;
 }
 
 .tl-box--employer--imageright {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-top: 35px;
     padding-left: 40px;
 }
 
@@ -91,7 +99,7 @@
 
 .tl-employer--big-image--left {
     text-align: left;
-    float: left;
+    // float: left;
 }
 
 .tl-employer--boxes-black {
@@ -189,7 +197,7 @@
     h3 {
         font-size: 20px;
         line-height: 20px;
-        margin-top: 40px;
+        margin-top: 45px;
 
         span {
             color: $purple;
