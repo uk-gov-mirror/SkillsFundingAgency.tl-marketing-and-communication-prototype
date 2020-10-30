@@ -100,6 +100,11 @@
 .tl-employer--big-image--left {
     text-align: left;
     float: left;
+    padding-left: 30px;
+
+    @media (max-width:767px) {
+        padding: 0 !important;
+    }
 }
 
 .tl-employer--boxes-black {
