@@ -176,6 +176,29 @@
 
 }
 
+.tl-employer--success {
+    border: 8px solid $purple;
+    color: black;
+    padding: 60px 25px !important;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (max-width:767px) {
+        padding: 35px 10px !important;
+
+        h2 {
+          margin-bottom: 20px;
+        }
+    }
+
+}
+
 .tl-employer-right-route {
 
     h3 {
