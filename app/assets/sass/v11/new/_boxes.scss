@@ -99,7 +99,7 @@
 
 .tl-employer--big-image--left {
     text-align: left;
-    // float: left;
+    float: left;
 }
 
 .tl-employer--boxes-black {
@@ -127,6 +127,27 @@
 
 .tl-employer--boxes-white {
     background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 5vw 20px;
+
+    @media (max-width:767px) {
+        padding: 35px 20px;
+    }
+
+}
+
+.tl-employer--form {
+    padding-right: 125px;
+
+    @media (max-width:767px) {
+        padding-right: 20px !important;
+    }
+
+}
+
+.tl-employer--boxes-grey {
+    background-color: #EFEFEF;
     color: black;
     font-size: 18px;
     padding: 5vw 20px;
@@ -245,13 +266,30 @@
 
 
 .tl-employer--involved {
+    max-height: 250px;
+    background-color: #EFEFEF;
+    color: black;
+    font-size: 18px;
+    padding: 35px 30px;
+
     h2 {
         margin-bottom: 40px;
     }
 
     h3 {
         font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
     }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:767px) {
+        margin-top: 50px !important;
+    }
+
 }
 
 .tl-employer--CTAnumber {
@@ -259,6 +297,7 @@
     font-family: 'LL Circular Black Web', Arial, Helvetica, sans-serif;
     margin-top: 5px;
     margin-bottom: 1em;
+    color: $purple;
 }
 
 .tl-employer--CTAemail {
