@@ -28,9 +28,9 @@
     }
 
     .tl-landing-box {
-        padding-top: 360px;
-        padding-bottom: 50px;
-        overflow: auto;
+        padding-top: 22vw;
+        padding-bottom: 50px !important;
+        overflow: hidden;
         max-height: 700px;
 
         @media (max-width: 992px) {
