@@ -15,6 +15,7 @@
 
     h2 {
         font-size: 18px;
+        color: #b1b4b6;
     }
 
     ul {
@@ -42,6 +43,7 @@
         &:after {
             content: "|";
             margin: 0 20px;
+            color: #b1b4b6;
 
             @media (max-width: 767px) {
                 display: none;
@@ -59,19 +61,20 @@
 
 
     .tl-footer-employer--link {
-        padding-bottom: 5px;
-        border-bottom: 1px solid $orange;
-        margin-bottom: 5px;
-        display: inline-block;
+      color: #b1b4b6;
+      padding-bottom: 1px;
+      border-bottom: 1px solid #b1b4b6;
+      margin-bottom: 5px;
+      display: inline-block;
 
-        &:hover {
-            border-bottom: 1px solid white;
-        }
+      &:hover {
+          color: lighten(#b1b4b6, 5%);
+      }
 
-        &--purple {
-            border-bottom: 1px solid $purple;
-        }
-    }
+      &--orange {
+          border-bottom: 1px solid #b1b4b6;
+      }
+  }
 }
 
 .tl-footer--social--student {
