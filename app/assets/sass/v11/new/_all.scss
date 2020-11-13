@@ -48,14 +48,14 @@ body {
 }
 
 .tl-link--careers {
-    color: white;
+    color: black;
     border-bottom: 2px solid $orange;
     text-decoration: none;
     padding-bottom: 0px;
     line-height: 26px;
 
     &:hover {
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid $black;
         @include rgba-background($orange, 0.25);
 
     }
