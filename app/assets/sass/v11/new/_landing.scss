@@ -41,7 +41,7 @@
 
 
     .tl-landing-left {
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("StudentLanding.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("TLevels_WebsiteAssets_New1.jpg");
         background-position: top;
         background-size: cover;
         background-color: white;
@@ -50,7 +50,7 @@
         padding-right: 60px;
 
         @media (max-width: 992px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("StudentLanding.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("TLevels_WebsiteAssets_New1.jpg");
             background-position: top;
             background-size: cover;
             background-color: white;
@@ -72,7 +72,7 @@
     }
 
     .tl-landing-right {
-        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("EmployerLanding.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),image("TLevels_WebsiteAssets_New2_RC.jpg");
         background-position: top;
         background-size: cover;
         background-color: white;
@@ -82,7 +82,7 @@
         text-align: right;
 
         @media (max-width: 992px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("EmployerLanding.jpg");
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("TLevels_WebsiteAssets_New2_RC.jpg");
             background-position: top;
             background-size: cover;
             background-color: white;
