@@ -1,0 +1,27 @@
+#tl-subjects {
+    #tl-footer {
+        background-color: $purple;
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        svg, g {
+            fill: white;
+        }
+
+
+        &:before {
+            background: image("arrowpurple.svg");
+        }
+
+        .tl-footer--bottom {
+            @extend .tl-border-top--white;
+        }
+    }
+
+    #tl-nav--bar-subjects {
+      border-bottom: 2px solid $orange;
+    }
+}

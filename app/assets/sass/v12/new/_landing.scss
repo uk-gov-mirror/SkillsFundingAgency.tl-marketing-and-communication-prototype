@@ -1,0 +1,167 @@
+#tl-landing {
+    position: relative;
+    z-index: unset;
+
+
+    * {
+        color: white;
+        z-index: unset;
+    }
+
+    h1 {
+        font-size: 55px;
+        line-height: 55px;
+
+        @media (min-width: 1150px) {
+            font-size: 55px;
+            line-height: 55px;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+
+    p {
+        padding: 10px 0;
+    }
+
+    .tl-landing-box {
+        padding-top: 22vw;
+        padding-bottom: 50px !important;
+        overflow: hidden;
+        max-height: 700px;
+
+        @media (max-width: 992px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+
+    .tl-landing-left {
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("TLevels_WebsiteAssets_New1.jpg");
+        background-position: top;
+        background-size: cover;
+        background-color: white;
+        background-repeat: no-repeat;
+        padding-left: 35px;
+        padding-right: 60px;
+
+        @media (max-width: 992px) {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),image("TLevels_WebsiteAssets_New1.jpg");
+            background-position: top;
+            background-size: cover;
+            background-color: white;
+            background-repeat: no-repeat;
+            padding: 70px 20px 30px 20px;
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 0;
+            }
+
+        }
+
+    }
+
+    .tl-landing-right {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),image("TLevels_WebsiteAssets_New2_RC.jpg");
+        background-position: top;
+        background-size: cover;
+        background-color: white;
+        background-repeat: no-repeat;
+        padding-right: 35px;
+        padding-left: 60px;
+        text-align: right;
+
+        @media (max-width: 992px) {
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),image("TLevels_WebsiteAssets_New2_RC.jpg");
+            background-position: top;
+            background-size: cover;
+            background-color: white;
+            background-repeat: no-repeat;
+            padding: 70px 20px 30px 20px;
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 0;
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+    .tl-landing-box--big {
+        padding: 30vh 20px 30vh 50px;
+
+        &:first-child {
+            padding: 30vh 50px 30vh 20px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 4vh 20px 4vh 20px !important;
+
+            &:first-child {
+                padding: 100px 20px 4vh 20px !important;
+            }
+        }
+
+        .tl-landing-box--content {
+            max-width: 550px;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+.tl-landing-logo {
+    position: absolute;
+    top: 20px;
+    z-index: 999 !important;
+
+    @media (max-width: 767px) {
+        margin-left: 20px;
+    }
+
+    a {
+        padding: 10px 0;
+        float: left;
+        background: image("logomediumwhite.svg") no-repeat left center;
+        min-width: 200px;
+        min-height: 40px;
+    }
+}
+
+
+    .tl-landing-logo--new {
+
+        a {
+            background: image("logowhite.svg") no-repeat left center;
+            min-width: 240px;
+            min-height: 50px;
+        }
+    }

@@ -1,0 +1,127 @@
+{% extends "../layoutemployer.html" %}
+{% block pageTitle %}
+  T Levels - The next level qualification
+{% endblock %}
+
+{% block body_id %}tl-employer-involved{% endblock %}
+{% block content %}
+<section id="tl-employer-about--banner">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-6 my-auto">
+                <div class="tl-employer-box" style="padding-left: 0px">
+                    <h1>NEXT STEPS</h1>
+                    <p class="tl-lede tl-margin-bottom-0">
+                      We can help you:
+                    </p>
+                    <ul class="tl-list tl-list-bullet">
+                        <li>answer any questions you have about industry placements, including how to find local colleges and schools with suitable students</li>
+                        <li>plan and prepare to offer placements</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-6 my-auto">
+                <img class="tl-employer--big-image tl-employer--big-image--left" src="{{ asset_path }}images/TLevels_WebsiteAssets39.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tl-employer--boxes-white">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8 tl-employer--form">
+                <h2>Do you want to discuss an industry placement?</h2>
+
+                <p>Send us a completed form and someone will contact you within 2 working days to discuss industry placements.</p>
+
+                <form class="tl-search--form ">
+
+                    <div class="row no-gutters">
+                      <label class="tl-input--label" for="name">Your full name</label>
+                      <input class="tl-input--employer" id="name" asp-for="name" type="text" aria-label="Enter your full name">
+                    </div>
+
+                    <div class="row no-gutters">
+                      <label class="tl-input--label" for="company">Name of organisation</label>
+                      <input class="tl-input--employer" id="company" asp-for="company" type="text" aria-label="Enter the name of your company">
+                    </div>
+
+                    <div class="row col-md-6" style="margin-right: 0px">
+                      <label class="tl-input--label" for="phone">Telephone</label>
+                      <input class="tl-input--employer" id="phone" asp-for="phone" type="text" aria-label="Enter your phone number">
+                    </div>
+
+                    <div class="row no-gutters">
+                      <label class="tl-input--label" for="email">Email</label>
+                      <input class="tl-input--employer" id="email" asp-for="email" type="text" aria-label="Enter your email address">
+                    </div>
+
+                    <h3 class="tl-input--label">How would you like to be contacted?</h3>
+                    <div class="tl-radios--inline">
+                      <div class="tl-radio-item">
+                        <input class="tl-radio-input" id="phonepref" name="contactpref" type="radio" value="phone">
+                        <label class="tl-radio--label" for="phonepref">
+                          Telephone
+                        </label>
+                      </div>
+                      <div class="tl-radio-item">
+                        <input class="tl-radio-input" id="emailpref" name="contactpref" type="radio" value="email">
+                        <label class="tl-radio--label" for="emailpref">
+                          Email
+                        </label>
+                      </div>
+
+                    </div>
+
+
+                    <a href="/{{ protoversion }}/employer/get-involved-success#success" class="tl-button tl-button--purple">Send form</a>
+
+                </form>
+
+            </div>
+
+
+            <div class="col-md-4 tl-employer--involved">
+
+                <h3>Alternatively, call the industry placement hotline</h3>
+
+                <p>Call:</p>
+                <p class="tl-employer--CTAnumber">0800 900 8349</p>
+                <p class="tl-margin-top-0">(choose option 4)</p>
+            </div>
+
+        </div
+    </div>
+</section>
+
+<section class="tl-employer--boxes-grey">
+    <div class="tl-container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="tl-margin-bottom-40">NEED MORE INFORMATION?</h2>
+
+                <p>The Department of Education has funded an online resource to help you understand T Levels and take on an industry placement student.</p>
+
+                <p>Register now to access:</p>
+
+                <ul class="tl-list tl-list-bullet">
+                    <li>toolkits and guidance</li>
+                    <li>webinars and workshops</li>
+                    <li>direct support from specialists</li>
+                </ul>
+
+
+                <p style="margin-top: 35px"><a class="tl-button" href="http://employerindustryplacements.co.uk">Get support for industry placements</a></p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,369 @@
+{% extends "../layout.html" %}
+{% block pageTitle %}
+  Find a T Level
+{% endblock %}
+
+{% block body_id %}tl-find{% endblock %}
+
+
+{% block content %}
+<section id="tl-search">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="tl-search--content" style="margin: 20px 0 20px 0">
+                    <h2 style="padding-bottom: 15px">Find your nearest T Level</h2>
+                    <p>Search for colleges and schools delivering T Levels in 2020 and 2021</p>
+                    <form class="tl-search--form">
+                        <label for="Postcode" class="hidden">Postcode</label>
+                        <input asp-for="Postcode" class="tl-input" placeholder="Enter your postcode" aria-label="Enter a postcode to find a T-Level near you" />
+                        <label for="tl-qualifications" class="hidden">Select a qualification</label>
+                        <input type="hidden" asp-for="Qualification" />
+                        <input type="hidden" asp-for="ShouldSearch" />
+                        <input id="MaxResultCount" value="5" type="hidden" />
+                        <select class="tl-input tl-input--select" id="tl-qualifications">
+                            <option value="0">All T Level courses</option>
+                            <option value="1">Building services engineering</option>
+                            <option value="2">Design, surveying and planning (construction)</option>
+                            <option value="3">Digital business services</option>
+                            <option value="4">Digital production, design and development</option>
+                            <option value="5">Digital support and services</option>
+                            <option value="6">Education</option>
+                            <option value="7">Health</option>
+                            <option value="8">Healthcare science</option>
+                            <option value="9">Onsite construction</option>
+                            <option value="10">Science</option>
+                        </select>
+                        <a href="#" id="tl-find-button--search"class="tl-button tl-button--orange">Search</a>
+
+                        <br />
+                        <span class="tl-validation--message field-validation-error">You must enter a real postcode</span>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="tl-results">
+    <div class="tl-container">
+        <div class="row no-gutters">
+            <div id="tl-search-results" class="col-md-9">
+
+
+                <div class="tl-results-box">
+                  <div class="row">
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          SOLIHULL COLLEGE & UNIVERSITY CENTRE
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                            Solihull | B91 1SB
+                        </p>
+                      <hr class="tl-line-lightgrey--small">
+                        <p class="tl-results-box--listheader"><strong>From September 2020 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Education</li>
+                        </ul>
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Health</li>
+                            <li class="tl-font-small">Healthcare science</li>
+                            <li class="tl-font-small">Science</li>
+                            <li style="display: none">All T Level courses</li>
+                        </ul>
+                      <p><a href="https://www.solihull.ac.uk/" class="tl-link tl-link--new"  id="tl-find--providersite">Visit their website</a></p>
+                    </div>
+
+                    <div class="tl-results-box-right col-md-4">
+                      <p class="tl-results-box--distance">0 miles away</p>
+
+                      <div class="row tl-margin-left-10">
+                        <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                        <span class="tl-results-box-miles">0 miles</span>
+                      </div>
+                      <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                      <div class="row tl-margin-left-10">
+                        <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                        <span class="tl-results-box-miles">0.4 miles</span>
+                      </div>
+                      <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                      <p class="tl-results-box-journey"><a target="_blank" href="https://www.google.com/maps/dir/B91+1NG,+Solihull/Solihull+College+%26+University+Centre+Blossomfield+Campus,+Solihull/@52.4113588,-1.795049,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4870b9e9b63f91ef:0x2a0e6b03104f3776!2m2!1d-1.7921997!2d52.4131839!1m5!1m1!1s0x4870b9c249edef4d:0xa9adeba9e68f74c!2m2!1d-1.7924987!2d52.4092323!3e3" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="tl-results-box">
+                  <div class="row">
+
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          UNIVERSITY COLLEGE BIRMINGHAM
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                            Birmingham | B3 1JP
+                        </p>
+                      <hr class="tl-line-lightgrey--small">
+
+                      <!--<p class="tl-results-box--listheader"><strong>From September 2020 onwards:</strong></p>
+                         <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Design, surveying and planning (construction)</li>
+                            <li class="tl-font-small">Digital production, design and development</li>
+                            <li class="tl-font-small">Education</li>
+                        </ul> -->
+
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Building services engineering</li>
+                            <li class="tl-font-small">Digital business services</li>
+                            <li class="tl-font-small">Healthcare science</li>
+                            <li class="tl-font-small">Science</li>
+                            <li style="display: none">All T Level courses</li>
+                        </ul>
+                        <p><a href="https://www.ucb.ac.uk/study/college/introducing-new-t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+
+                      </div>
+
+                      <div class="tl-results-box-right col-md-4">
+                        <p class="tl-results-box--distance">7 miles away</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                          <span class="tl-results-box-miles">0.1 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                          <span class="tl-results-box-miles">0.4 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                        <p class="tl-results-box-journey"><a target="_blank" href="https://www.google.com/maps/dir/B91+1NG,+Solihull/University+College+Birmingham,+Summer+Row,+Birmingham/@52.4486107,-1.8827295,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4870b9e9b63f91ef:0x2a0e6b03104f3776!2m2!1d-1.7921997!2d52.4131839!1m5!1m1!1s0x4870bcf3243a495d:0xec0854d8713aa81a!2m2!1d-1.9063332!2d52.4813851!3e3" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="tl-results-box">
+                  <div class="row">
+
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          UNIVERSITY COLLEGE BIRMINGHAM
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                            Birmingham | B1 3PY
+                        </p>
+                      <hr class="tl-line-lightgrey--small">
+
+                      <!--<p class="tl-results-box--listheader"><strong>From September 2020 onwards:</strong></p>
+                         <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Design, surveying and planning (construction)</li>
+                            <li class="tl-font-small">Digital production, design and development</li>
+                            <li class="tl-font-small">Education</li>
+                        </ul> -->
+
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Building services engineering</li>
+                            <li class="tl-font-small">Digital business services</li>
+                            <!-- <li class="tl-font-small">Healthcare science</li> -->
+                            <!-- <li class="tl-font-small">Science</li> -->
+                            <li style="display: none">All T Level courses</li>
+                        </ul>
+                        <p><a href="https://www.ucb.ac.uk/study/college/introducing-new-t-levels/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+
+                      </div>
+
+                      <div class="tl-results-box-right col-md-4">
+                        <p class="tl-results-box--distance">7 miles away</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                          <span class="tl-results-box-miles">0 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                          <span class="tl-results-box-miles">0.3 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                        <p class="tl-results-box-journey"><a target="_blank" href="https://www.google.com/maps/dir/B91+1NG,+Solihull/University+College+Birmingham,+Summer+Row,+Birmingham/@52.4486107,-1.8827295,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4870b9e9b63f91ef:0x2a0e6b03104f3776!2m2!1d-1.7921997!2d52.4131839!1m5!1m1!1s0x4870bcf3243a495d:0xec0854d8713aa81a!2m2!1d-1.9063332!2d52.4813851!3e3" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                      </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="tl-results-box">
+                  <div class="row">
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          LORDSWOOD GIRLS' SCHOOL & SIXTH FORM CENTRE
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                            Birmingham | B17 8QB
+                        </p>
+
+                        <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>From September 2020 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Design, surveying and planning (construction)</li>
+                            <li class="tl-font-small">Digital production, design and development</li>
+                            <li class="tl-font-small">Education</li>
+                        </ul>
+
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Building services engineering</li>
+                            <li class="tl-font-small">Digital business services</li>
+                            <li class="tl-font-small">Health</li>
+                            <li style="display: none">All T Level courses</li>
+
+                        </ul>
+                        <p><a href="http://www.lordswoodgirls.co.uk/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+
+                      </div>
+
+
+                      <div class="tl-results-box-right col-md-4">
+                        <p class="tl-results-box--distance">8 miles away</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                          <span class="tl-results-box-miles">0.1 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                          <span class="tl-results-box-miles">1.6 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                        <p class="tl-results-box-journey"><a target="_blank" href="https://www.google.com/maps/dir/B91+1NG,+Solihull/Lordswood+Girls%E2%80%99+School+and+Sixth+Form+Centre,+Knightlow+Road,+Harborne,+Birmingham/@52.44116,-1.9493266,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4870b9e9b63f91ef:0x2a0e6b03104f3776!2m2!1d-1.7921997!2d52.4131839!1m5!1m1!1s0x4870bd9c14df95af:0x9572f37f9662ea00!2m2!1d-1.9651794!2d52.4694753!3e3" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                      </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="tl-results-box">
+                  <div class="row">
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          HEART OF WORCESTERSHIRE COLLEGE
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                          Redditch | B98 8DW
+                        </p>
+
+                        <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Building services engineering</li>
+                            <li class="tl-font-small">Onsite construction</li>
+                            <li style="display: none">All T Level courses</li>
+
+                        </ul>
+                        <p><a href="https://www.howcollege.ac.uk/" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+
+                      </div>
+
+
+                      <div class="tl-results-box-right col-md-4">
+                        <p class="tl-results-box--distance">9 miles away</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                          <span class="tl-results-box-miles">0.2 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                          <span class="tl-results-box-miles">5.2 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                        <p class="tl-results-box-journey"><a target="_blank" href="https://www.google.com/maps/dir/B91+1NG,+Solihull/Heart+of+Worcestershire+College,+Redditch+Campus,+Peakman+St,+Redditch+B98+8DW/@52.3930672,-1.9606287,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4870b9e9b63f91ef:0x2a0e6b03104f3776!2m2!1d-1.7921997!2d52.4131839!1m5!1m1!1s0x4870c04bf6db8649:0xe172d816900dd004!2m2!1d-1.9384375!2d52.3077011!3e3" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                      </div>
+                    </div>
+
+                </div> -->
+
+                <div class="tl-results-box">
+                  <div class="row">
+                    <div class="tl-results-box-left col-md-8">
+                      <h3>
+                          SANDWELL ACADEMY
+                      </h3>
+                        <p class="tl-results-box--subheader">
+                          Sandwell | B71 4LG
+                        </p>
+
+                        <hr class="tl-line-lightgrey--small">
+
+                        <p class="tl-results-box--listheader"><strong>From September 2020 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Digital production, design and development</li>
+                        </ul>
+
+                        <p class="tl-results-box--listheader"><strong>From September 2021 onwards:</strong></p>
+                        <ul class="tl-list tl-list-small tl-list-bullet">
+                            <li class="tl-font-small">Digital business services</li>
+                            <li class="tl-font-small">Health</li>
+                            <li style="display: none">All T Level courses</li>
+                        </ul>
+                        <p><a href="http://www.sandwellacademy.com/page/6th-tlevels" class="tl-link tl-link--new" id="tl-find--providersite">Visit their website</a></p>
+
+                      </div>
+
+
+                      <div class="tl-results-box-right col-md-4">
+                        <p class="tl-results-box--distance">11 miles away</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/transport.png" alt="" />
+                          <span class="tl-results-box-miles">0.1 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest bus stop</p>
+
+                        <div class="row tl-margin-left-10">
+                          <img class="tl-results-box-png" src="{{ asset_path }}images/subway.png" alt="" />
+                          <span class="tl-results-box-miles">0.1 miles</span>
+                        </div>
+                        <p class="tl-results-box-journey tl-font-small">from the nearest train station</p>
+
+                        <p class="tl-results-box-journey"><a target="_blank" href="https://www.test.tlevels.gov.uk/students/find?Postcode=B91+3ES&NumberOfItemsToShow=5&ShouldSearch=True&SearchedQualificationId=0&TotalRecordCount=181&SelectedItemIndex=0&SelectedQualificationId=0&SubmitType=search" class="tl-link tl-link--new tl-font-small">How do I get there?</a></p>
+                      </div>
+                    </div>
+
+                </div>
+
+
+                <p class="tl-next--container tl-margin-bottom-80">
+                    <a href="#" id="tl-next" class="tl-button tl-button--arrow tl-tablet-hidden">Load next 5 providers</a>
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
