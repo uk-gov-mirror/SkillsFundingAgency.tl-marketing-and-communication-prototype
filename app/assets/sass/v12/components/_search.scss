@@ -219,14 +219,15 @@ font-size: 18px;
         }
 
         .tl-results-box--distance {
-            font-family: 'Sora Regular', Arial;
-            font-weight: 400;
-            font-size: 16px;
-            background-color: black;
-            position: relative;
-            padding: 15px;
-            color: white;
-            text-transform: lowercase;
+          font-family: 'Sora Regular', Arial;
+          font-weight: 400;
+          font-size: 16px;
+          background-color: black;
+          position: relative;
+          padding: 10px 18px;
+          color: white;
+          text-transform: lowercase;
+          float: right;
         }
 
         .tl-results-box--header {
